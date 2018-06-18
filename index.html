@@ -19,9 +19,57 @@
                 </style>
     </head>
     <body>
-<<<<<<< HEAD
-        <header>
-        </header>
+      <header>
+
+
+                          <nav class="navbar navbar-expand" id="menu">
+                              <div class="navbar-brand">
+                              <h3><span class="colorRed"><b>ALLEZ</span>CINE!</b></h3>
+                              </div>
+                          </nav>
+                      <div id="demo" class="carousel slide" data-ride="carousel">
+                        <!-- Nav -->
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+
+
+
+                          <div class="carousel-item active">
+                            <img src="./img/poster1.jpg" alt="Ocean's 8" class="poster mx-auto d-block">
+                          </div>
+                          <div class="carousel-item">
+
+                            <img src="./img/poster2.png" alt="Solo : a Star Wars Story" class="poster mx-auto d-block">
+                          </div>
+                          <div class="carousel-item">
+
+                            <img src="./img/poster3.jpg" alt="Jurassic World" class="poster mx-auto d-block">
+                          </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    <!-- Forms -->
+                    </div>
+                    <div id="btnForm">
+                          <i class="fa fa-phone" aria-hidden="true"></i>(+000) 009 455 4088
+
+                          <button onclick="document.getElementById('Login').style.display='block'" style="width:auto;">Login</button>
+                          <button onclick="document.getElementById('Register').style.display='block'" style="width:auto;">Register</button>
+
+                      </div>
+                  </header>
         <section id="Films">
           <div class="card-group">
             <div class="card">
@@ -55,64 +103,6 @@
               </div>
             </div>
           </div>
-=======
-            <header>
-                    
-                     
-                                <nav class="navbar navbar-expand" id="menu">
-                                    <div class="navbar-brand">
-                                    <h3><span class="colorRed"><b>ALLEZ</span>CINE!</b></h3>
-                                    </div>
-                                </nav>
-                            <div id="demo" class="carousel slide" data-ride="carousel">
-                              <!-- Nav -->
-                              <!-- Indicators -->
-                              <ul class="carousel-indicators">
-                                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                                <li data-target="#demo" data-slide-to="1"></li>
-                                <li data-target="#demo" data-slide-to="2"></li>
-                              </ul>
-                              <!-- The slideshow -->
-                              <div class="carousel-inner">
-                                   
-                    
-                            
-                                <div class="carousel-item active">
-                                  <img src="./img/batmanmovie-2017-comedie.jpg" alt="Ocean's 8" class="poster mx-auto d-block">
-                                </div>
-                                <div class="carousel-item">
-                                  
-                                  <img src="./img/hostel-2005-thriller.jpg" alt="Solo : a Star Wars Story" class="poster mx-auto d-block">
-                                </div>
-                                <div class="carousel-item">
-                                  
-                                  <img src="./img/inception-2010-scifi.jpg" alt="Jurassic World" class="poster mx-auto d-block">
-                                </div>
-                              </div>
-                              <!-- Left and right controls -->
-                              <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                              </a>
-                              <a class="carousel-control-next" href="#demo" data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                              </a>
-                            </div>
-                          <!-- Forms -->
-                          </div>
-                          <div id="btnForm">
-                                <i class="fa fa-phone" aria-hidden="true"></i>(+000) 009 455 4088
-
-                                <button onclick="document.getElementById('Login').style.display='block'" style="width:auto;">Login</button>
-                                <button onclick="document.getElementById('Register').style.display='block'" style="width:auto;">Register</button>
-
-                            </div>
-                        </header>
-        <section>
-
-        </section>
-        <section id="films">
-
->>>>>>> 292ecdc7387a044b3fbac3db8da00a776c3b35ce
         </section>
         <section id="FeaturedMovies">
 
@@ -128,7 +118,7 @@
         </footer>
 
         <div id="Login" class="modal">
-            
+
             <form class="modal-content animate" action="">
                 <div class="container">
                     <label for="Identifiant"><b>Identifiant</b></label>
@@ -136,7 +126,7 @@
 
                     <label for="Password"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" name="Password" required>
-                        
+
                     <button type="submit">Login</button><button type="button" onclick="change()">Créer un compte</button>
                     <label>
                         <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -144,15 +134,15 @@
                 </div>
 
                 <div class="container" style="background-color:#f1f1f1">
-                    
+
                     <button type="button" onclick="document.getElementById('Login').style.display='none'" class="cancelbtn">Cancel</button>
                     <span class="psw">Forgot <a href="#">password?</a></span>
                 </div>
             </form>
         </div>
-        
+
         <div id="Register" class="modal">
-            
+
             <form class="modal-content animate" action="">
                 <div class="container">
                     <label for="name"><b>Nom</b></label>
@@ -164,7 +154,7 @@
                     <label for="psw"><b>Password</b></label>
                     <input type="password" id="psw" class="champ" required>
 
-                    <label for="confirmation">Confirmation</label> 
+                    <label for="confirmation">Confirmation</label>
                     <input type="password" id="confirmation" class="champ" required>
 
                     <label>
@@ -190,7 +180,7 @@
             </form>
         </div>
         <script src="script.js">
-            
+
         </script>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
