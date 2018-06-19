@@ -1,19 +1,38 @@
+.row {
+  width: 100%;
+}
 
 .poster {
-  width: 100% ;
-  height: 400px ;
+  width: 100%;
+  height: auto;
 }
 
 .jumbotron {
   padding: 0px;
   margin: 0px;
-
 }
 
 .carousel-inner {
   width: 100%;
-  height: 400px ;
+  height: auto;
 }
+
+.carousel-item {
+  background-position: center center;
+  background-size: cover;
+}
+
+.ci1 {
+  background-image: url(./img/poster1.jpg);
+
+}
+.ci2 {
+  background-image: url(./img/poster2.png);
+}
+.ci3 {
+  background-image: url(./img/poster3.jpg);
+}
+
 
 body {font-family: Arial, Helvetica, sans-serif;}
 
