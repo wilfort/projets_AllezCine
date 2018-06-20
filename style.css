@@ -1,18 +1,34 @@
+
+
 .poster {
-  width: 100% ;
-  height: 500px ;
+  width: 100%;
+  height: auto;
 }
 
 .jumbotron {
   padding: 0px;
   margin: 0px;
-  
 }
 
 .carousel-inner {
   width: 100%;
   height: auto ;
+
+  background-position: center center;
+  background-size: cover;
 }
+
+.ci1 {
+  background-image: url(./img/poster1.jpg);
+
+}
+.ci2 {
+  background-image: url(./img/poster2.png);
+}
+.ci3 {
+  background-image: url(./img/poster3.jpg);
+}
+
 
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -149,12 +165,12 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
-    
+
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 }
 #reseauSociaux{position: fixed;
@@ -253,5 +269,17 @@ z-index: 5;}
 }
 .colorMauve{color: rgb(119, 32, 153)}
 .carousel-indicators{ z-index: 1;}
+
 a{list-style: none;
     text-decoration: none;}
+.colorRed{color: red}
+.carousel-indicators{
+  z-index: 1;
+}
+.fontCard{
+  font-size: 90%;
+}
+
+#Films {
+  width: 100%;
+}
