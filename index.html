@@ -26,7 +26,7 @@
                                                                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop"data-toggle="dropdown">
                                                                         <span class="fa fa-bars">
                                                                     <div class="dropdown-menu">
-                                                                        <a class="nav-link" id="navAct" href="#">
+                                                                        <a class="nav-link"href="#">
                                                                              Home</a>
                                                                         <a class="nav-link" href="#Films">
                                                                             Films</a>
@@ -81,7 +81,7 @@
                                               </div>
                                 </div>
                           </nav>
-                      <div id="demo" class="carousel slide" data-ride="carousel">
+                      <div id="demo" class="carousel slide jumbotron jumbotron-fluid" data-ride="carousel">
                         <!-- Nav -->
                         <!-- Indicators -->
                         <ul class="carousel-indicators">
@@ -124,6 +124,34 @@
 
                       </div>
                   </header>
+
+        <section id="reseauSociaux">
+            <div class="sociaux">
+                <button class="bpnS"id="twitter">
+                    <span>twitter</span>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </button>
+        
+            </div>
+            <div class="sociaux">
+                <button class="bpnS" id="facebook">
+                    <span>facebook</span>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="sociaux">
+                <button class="bpnS" id="dribbble">
+                    <span>dribbble</span>
+                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="sociaux">
+                <button class="bpnS" id="google-plus">
+                    <span>google plus</span>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
         <section id="Films">
           <div class="card-group">
             <div class="card">
@@ -165,6 +193,8 @@
 
         </section>
         <section id="ContactUs">
+                <div class="googlemaps-canvas" zoom="zoom" latitude="latitude" longitude="longitude" style="width: widthpx; height: heightpx;"></div>
+                <div class="googlemapssearch" data-search="SEARCHWORDS" data-api-key="YOUR_GOOGLE_MAP_API_KEY" width="WIDTH" height="HEIGHT" ></div>
 
         </section>
         <footer id="Footer">
@@ -172,8 +202,11 @@
         </footer>
 
         <div id="Login" class="modal">
-
+                
             <form class="modal-content animate" action="">
+                    <span onclick="document.getElementById('Login').style.display='none'" 
+                    class="close">&times;</span>
+                    
                 <div class="container">
                     <label for="Identifiant"><b>Identifiant</b></label>
                     <input type="text" id="Identifiant" class="champ inputToP" required>
@@ -196,8 +229,11 @@
         </div>
 
         <div id="Register" class="modal">
-
+                
             <form class="modal-content animate" action="">
+                    <span onclick="document.getElementById('Register').style.display='none'" 
+                    class="close">&times;</span>
+                    
                 <div class="container">
                     <label for="name"><b>Nom</b></label>
                     <input type="text" id="name" class="champ inputToP" required>
@@ -225,19 +261,33 @@
             </form>
         </div>
         <div id="VerifAge" class="modal">
-            <form class="modal-content animate" action="">
+            <form class="modal-content animate" >
+                    <span onclick="document.getElementById('VerifAge').style.display='none'" 
+                    class="close">&times;</span>
                 <div class="container">
                         <label for="age"><b>Entrer votre age</b></label>
-                        <input type="text" id="age" class="champ inputToP" required>
-                        <button type="submit" onclick="verifAge()">Validation</button>
+                        <input type="text" id="VAge" class="inputToP" required>
+                        <button type="submit" onclick="VerifAge()">Validation</button>
                 </div>
             </form>
         </div>
-       
+        <div id="AvisCookies" class="modal">
+                <form class="modal-content cookies animate"><span onclick="document.getElementById('AvisCookies').style.display='none'" class="close">&times;</span>
+                    <div class="container">
+                        Ce site utilise des cookies et vous donne le contrôle sur ce que vous souhaitez activer 
+                        <a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi">plus info</a> 
+                        
+                    </div>
+                </form>
+        </div>
+        <script type="text/javascript" src="./tarteaucitron/tarteaucitron.js"></script>
+        <script src="cookies.js">
+
+        </script>
         <script src="script.js">
 
         </script>
-
+        
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

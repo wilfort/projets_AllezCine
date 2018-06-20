@@ -1,0 +1,12 @@
+pour Timiline JS
+<div class="timelinejs-canvas" spreadsheet_id="spreadsheet_id" width="width" height="height" lang="lang_2_letter" font="font (Bevan-PotanoSans | Georgia-Helvetica | Arvo-PTSans)" map="map (toner | osm)" start_at_end="start_at_end (false | true)" hash_bookmark="hash_bookmark (false | true)" start_at_slide="start_at_slide (0 | ...)" start_zoom="start_zoom (0 | ... | 5)"></div>
+<iframe src="//cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=spreadsheet_id&font=font&maptype=map&lang=lang_2_letter&start_at_end=start_at_end&hash_bookmark=hash_bookmark&start_at_slide=start_at_slide&start_zoom_adjust=start_zoom_adjust&height=height" width="width" height="height" frameborder="0"></iframe>
+
+pour le commentaire disqus
+<div id="disqus_thread"></div>
+
+pour le commentaire facebook v1
+<div class="fb-comments" data-numposts="5" data-colorscheme="light" data-href="CURRENT_URI"></div>
+
+pour le commentaire facebook v2
+<div class="fb-comments" data-numposts="5" data-colorscheme="dark" data-href="CURRENT_URI"></div>

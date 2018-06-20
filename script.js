@@ -77,11 +77,16 @@ function change(){
 }
 window.onload=function() { // Au chargement de la page
     //window.open(/* ... */); // On ouvre la popup
-    //document.getElementById('VerifAge').style.display="block";
+    var age =prompt('Quelle est votre age ?')
+    if (age<18)
+            {
+            document.location.href="https://www.imdb.com/";
+        }
+        else if (age>=18)
+            {
+                document.getElementById('VerifAge').style.display = "none";
+                document.getElementById('AvisCookies').style.display="block";
+                }
+    
+    
   };
-function verifAge(){
-    if (document.getElementById('age').val()<18)
-        {document.location.href="http://www.mondomaine.com";}
-    else
-        {document.getElementById('VerifAge').style.display = "none";}
-}
