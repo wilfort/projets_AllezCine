@@ -1,5 +1,5 @@
-tarteaucitron.init({
-    "hashtag": "#tarteaucitron", /* Ouverture automatique du panel avec le hashtag */
+cookies.init({
+    "hashtag": "#cookies", /* Ouverture automatique du panel avec le hashtag */
     "highPrivacy": true, /* désactiver le consentement implicite (en naviguant) ? */
     "orientation": "top", /* le bandeau doit être en haut (top) ou en bas (bottom) ? */
     "adblocker": false, /* Afficher un message si un adblocker est détecté */
