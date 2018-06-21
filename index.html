@@ -1,416 +1,312 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-    <head>
-        <title>Allez Cine</title>
-        <meta charset="utf-8">
-        <meta name="theme-color" content="#317EFB" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <header>
+	<head>
+		<title>Allez Cine</title>
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#317EFB" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand" id="menu">
+				<div class="navbar-brand">
+					<h3>
+						<span class="colorMauve"><b>ALLEZ</span>CINE!</b>
+					</h3>
+				</div>
+				<div class="collapse navbar-collapse" >
+					<div id="navbarP">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop"data-toggle="dropdown">
+									<span class="fa fa-bars">
+										<div class="dropdown-menu">
+											<a class="nav-link"href="#">Home</a>
+											<a class="nav-link" href="#Films">Films</a>
+											<a class="nav-link"  href="#FeaturedMovies">Featured Movies</a>
+											<a class="nav-link"  href="#ShopMovie">Shop Movie</a>
+											<a class="nav-link" href="#Footer">Footer</a>
+											<a class="nav-link" href="#ContactUs">Contact</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div id="navbarN">
+								<ul class="nav nav-pills nav-fill">
+									<li class="nav-item"><a class="nav-link" id="navAct" href="#">Home</a></li>
+									<li class="nav-item"><a class="nav-link"  href="#Films">Films</a></li>
+									<li class="nav-item"><a class="nav-link" href="#FeaturedMovies">Featured Movies</a></li>
+									<li class="nav-item"><a class="nav-link"  href="#ShopMovie">Shop Movie</a></li>
+									<li class="nav-item"><a class="nav-link" href="#Footer">Footer</a></li>
+									<li class="nav-item"><a class="nav-link" href="#ContactUs">Contact</a></li>
+								</ul>
+							</div>
+							<div>
+								<div class="input-group">
+									<input type="text" class="form-control inputTS"  placeholder="Search">
+									<div class="input-group-btn">
+										<button class="btn btn-default bpmef" type="submit"><i class="fa fa-search"></i></button>
+									</div>
+								</div>
+							</div>
+						</nav>
+						<div id="demo" class="carousel slide jumbotron jumbotron-fluid" data-ride="carousel">
+							<!-- Nav -->
+							<!-- Indicators -->
+							<ul class="carousel-indicators">
+								<li data-target="#demo" data-slide-to="0" class="active"></li>
+								<li data-target="#demo" data-slide-to="1"></li>
+								<li data-target="#demo" data-slide-to="2"></li>
+							</ul>
+							<!-- The slideshow -->
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="./img/poster1.jpg" alt="Ocean's 8" class="poster mx-auto d-block">
+								</div>
+								<div class="carousel-item">
+									<img src="./img/poster2.png" alt="Solo : a Star Wars Story" class="poster mx-auto d-block">
+								</div>
+								<div class="carousel-item">
+									<img src="./img/poster3.jpg" alt="Jurassic World" class="poster mx-auto d-block">
+								</div>
+							</div>
+							<!-- Left and right controls -->
+							<a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+							<a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+						</div>
+						<!-- Forms -->
+					</div>
+					<div id="btnForm">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						(+000) 009 455 4088
+						<button class="button-F" onclick="document.getElementById('Login').style.display='block'" style="width:auto;">Login</button>
+						<button class="button-F" onclick="document.getElementById('Register').style.display='block'" style="width:auto;">Register</button>
+					</div>
+			 </header>
 
-                          <nav class="navbar navbar-expand" id="menu">
-                              <div class="navbar-brand">
-                              <h3><span class="colorMauve"><b>ALLEZ</span>CINE!</b></h3>
-                              </div>
-                              <div class="collapse navbar-collapse" >
-                                                        <div id="navbarP">
-                                                            <ul class="navbar-nav">
-                                                                <li class="nav-item dropdown">
-                                                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop"data-toggle="dropdown">
-                                                                        <span class="fa fa-bars">
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="nav-link"href="#">
-                                                                             Home</a>
-                                                                        <a class="nav-link" href="#Films">
-                                                                            Films</a>
-                                                                        <a class="nav-link"  href="#FeaturedMovies">
-                                                                            Featured Movies</a>
-                                                                        <a class="nav-link"  href="#ShopMovie">
-                                                                            Shop Movie</a>
-                                                                        <a class="nav-link" href="#Footer">
-                                                                            Footer</a>
-                                                                        <a class="nav-link" href="#ContactUs">
-                                                                            Contact</a>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                    <div id="navbarN">
-                                        <ul class="nav nav-pills nav-fill">
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="navAct" href="#">
-                                                Home</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link"  href="#Films">
-                                                    Films</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#FeaturedMovies">
-                                                    Featured Movies</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link"  href="#ShopMovie">
-                                                    Shop Movie</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#Footer">
-                                                    Footer</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#ContactUs">
-                                                    Contact</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                <div>
-                                        <div class="input-group">
-                                                <input type="text" class="form-control inputTS"  placeholder="Search">
-                                                <div class="input-group-btn">
-                                                  <button class="btn btn-default bpmef" type="submit">
-                                                    <i class="fa fa-search"></i>
-                                                  </button>
-                                                </div>
-                                              </div>
-                                </div>
-                          </nav>
-                      <div id="demo" class="carousel slide jumbotron jumbotron-fluid" data-ride="carousel">
-                        <!-- Nav -->
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                          <li data-target="#demo" data-slide-to="0" class="active"></li>
-                          <li data-target="#demo" data-slide-to="1"></li>
-                          <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-
-
-
-                          <div class="carousel-item active">
-                            <img src="./img/poster1.jpg" alt="Ocean's 8" class="poster mx-auto d-block">
-                          </div>
-                          <div class="carousel-item">
-
-                            <img src="./img/poster2.png" alt="Solo : a Star Wars Story" class="poster mx-auto d-block">
-                          </div>
-                          <div class="carousel-item">
-
-                            <img src="./img/poster3.jpg" alt="Jurassic World" class="poster mx-auto d-block">
-                          </div>
-                        </div>
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                          <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                          <span class="carousel-control-next-icon"></span>
-                        </a>
-                      </div>
-                    <!-- Forms -->
-                    </div>
-                    <div id="btnForm">
-                          <i class="fa fa-phone" aria-hidden="true"></i>(+000) 009 455 4088
-
-                          <button class="button-F" onclick="document.getElementById('Login').style.display='block'" style="width:auto;">Login</button>
-                          <button class="button-F" onclick="document.getElementById('Register').style.display='block'" style="width:auto;">Register</button>
-
-                      </div>
-                  </header>
-
-        <section id="reseauSociaux">
-            <div class="sociaux">
-                <button class="bpnS"id="twitter">
-                    <span>twitter</span>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </button>
-
-            </div>
-            <div class="sociaux">
-                <button class="bpnS" id="facebook">
-                    <span>facebook</span>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </button>
-            </div>
-            <div class="sociaux">
-                <button class="bpnS" id="dribbble">
-                    <span>dribbble</span>
-                    <i class="fa fa-dribbble" aria-hidden="true"></i>
-                </button>
-            </div>
-            <div class="sociaux">
-                <button class="bpnS" id="google-plus">
-                    <span>google plus</span>
-                    <i class="fa fa-google-plus" aria-hidden="true"></i>
-                </button>
-            </div>
-        </section>
-        <section id="Films">
-            <div class="row mx-auto">
-                    <div class="col-12 mx-auto d-flex">
-                        <div class="row mx-auto d-flex text-center">
-
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-2 offset-lg-1">
-                                    <div class="card">
-                                        <img class="card-img-top" src="./img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                        <h5 class="card-title text-center fontCard">Batman Movie</h5>
-                                        <div class="row">
-                                        <div class="col-6 text-left">
-                                            2017
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            Comédie
-                                        </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                                    <div class=" card">
-                                        <img class="card-img-top" src="img/intouchables-2011-comedie.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center fontCard">Intouchables</h5>
-                                            <div class="row">
-                                                <div class="col-6 text-left">
-                                                    2011
-                                                </div>
-                                                <div class="col-6 text-right">
-                                                    Comédie
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-lg-2 ">
-                                    <div class="card ">
-                                        <img class="card-img-top" src="img/thefall-2006-dramatique.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center text-left fontCard">The Fall</h5>
-                                            <div class="row">
-                                                <div class="col-6 text-left">
-                                                    2006
-                                                </div>
-                                                <div class="col-6 text-right">
-                                                    Dramatique
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 offset-md-2 col-lg-2 offset-lg-0">
-                                    <div class="card ">
-                                        <img class="card-img-top" src="img/shutterisland-2010-thriller.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center fontCard">Shutter Island</h5>
-                                            <div class="row">
-                                                <div class="col-6 text-left">
-                                                    2010
-                                                </div>
-                                                <div class="col-6 text-right">
-                                                    Thriller
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-2 offset-lg-0">
-                                    <div class="card">
-                                        <img class="card-img-top" src="img/swissarmyman-2016-comedie.jpg" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center fontCard">Swiss Army Man</h5>
-                                            <div class="row">
-                                                <div class="col-6 text-left">
-                                                    2016
-                                                </div>
-                                                <div class="col-6 text-right">
-                                                    Comédie
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                        </div>
-                    </div>
-            </div>
-        </section>
-
-        <!-- <section id="FeaturedMovies">
-          <div class="row mx-auto d-flex ">
-              <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-                <div class="card">
-                  <img class="card-img-top" src="./img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title text-center fontCard">Batman Movie</h5>
-                    <p class="card-text text-left fontCard">2017 Comédie</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-                <div class=" card">
-                  <img class="card-img-top" src="img/intouchables-2011-comedie.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title text-center fontCard">Intouchables</h5>
-                    <p class="card-text text-left fontCard">2011</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-                <div class="card ">
-                  <img class="card-img-top" src="img/thefall-2006-dramatique.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title text-center text-left fontCard">The Fall</h5>
-                    <p class="card-text fontCard">2006</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-                <div class="card ">
-                  <img class="card-img-top" src="img/shutterisland-2010-thriller.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title text-center fontCard">Shutter Island</h5>
-                    <p class="card-text text-left fontCard">2010</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-                <div class="card ">
-                  <img class="card-img-top" src="img/swissarmyman-2016-comedie.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title text-center fontCard">Swiss Army Man</h5>
-                    <p class="card-text text-left fontCard">2016</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
-                <div class="card ">
-                  <img class="card-img-top" src="img/Survivestyle5-2004-comedie.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title text-center fontCard">Survive Style</h5>
-                    <p class="card-text text-left fontCard">2004</p>
-                  </div>
-                </div>
-              </div>
-        </section> -->
-
-        <section id="ShopMovie">
-
-        </section>
-        <section id="ContactUs">
-                <div class="googlemaps-canvas" zoom="zoom" latitude="latitude" longitude="longitude" style="width: widthpx; height: heightpx;"></div>
-                <div class="googlemapssearch" data-search="SEARCHWORDS" data-api-key="YOUR_GOOGLE_MAP_API_KEY" width="WIDTH" height="HEIGHT" ></div>
-
-        </section>
-        <footer id="Footer">
-
+				<section id="reseauSociaux">
+					<div class="sociaux">
+						<button class="bpnS"id="twitter">
+							<span>Twitter</span>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="sociaux">
+						<button class="bpnS" id="facebook">
+							<span>Facebook</span>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="sociaux">
+						<button class="bpnS" id="dribbble">
+							<span>Dribbble</span>
+							<i class="fa fa-dribbble" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="sociaux">
+						<button class="bpnS" id="google-plus">
+							<span>Google plus</span>
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+						</button>
+					</div>
+				</section>
+				<section id="Films">
+					<div class="row mx-auto">
+						<div class="col-12 mx-auto d-flex">
+							<div class="row mx-auto d-flex text-center">
+								<div class="col-12 col-sm-6 col-md-4 col-lg-2 offset-lg-1">
+									<div class="card">
+										<img class="card-img-top" src="./img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title text-center fontCard">
+												Batman Movie
+											</h5>
+											<div class="row">
+												<div class="col-6 text-left">
+													2017
+												</div>
+												<div class="col-6 text-right">
+													Comédie
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+									<div class=" card">
+										<img class="card-img-top" src="img/intouchables-2011-comedie.jpg" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title text-center fontCard">
+												Intouchables
+											</h5>
+											<div class="row">
+												<div class="col-6 text-left">
+													2011
+												</div>
+												<div class="col-6 text-right">
+													Comédie
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 col-lg-2 ">
+									<div class="card ">
+										<img class="card-img-top" src="img/thefall-2006-dramatique.jpg" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title text-center text-left fontCard">
+												The Fall
+											</h5>
+											<div class="row">
+												<div class="col-6 text-left">
+													2006
+												</div>
+												<div class="col-6 text-right">
+													Dramatique
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 offset-md-2 col-lg-2 offset-lg-0">
+									<div class="card ">
+										<img class="card-img-top" src="img/shutterisland-2010-thriller.jpg" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title text-center fontCard">
+												Shutter Island
+											</h5>
+											<div class="row">
+												<div class="col-6 text-left">
+													2010
+												</div>
+												<div class="col-6 text-right">
+													Thriller
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-2 offset-lg-0">
+									<div class="card">
+										<img class="card-img-top" src="img/swissarmyman-2016-comedie.jpg" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title text-center fontCard">
+												Swiss Army Man
+											</h5>
+											<div class="row">
+												<div class="col-6 text-left">
+													2016
+												</div>
+												<div class="col-6 text-right">
+													Comédie
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="ShopMovie"></section>
+				<section id="ContactUs">
+					<div class="googlemaps-canvas" zoom="zoom" latitude="latitude" longitude="longitude" style="width: widthpx; height: heightpx;"></div>
+					<div class="googlemapssearch" data-search="SEARCHWORDS" data-api-key="YOUR_GOOGLE_MAP_API_KEY" width="WIDTH" height="HEIGHT" ></div>
+				</section>
+				<footer id="Footer">
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Haut</button>
         </footer>
+				<div id="Login" class="modal">
+					<form class="modal-content animate" action="">
+						<span onclick="document.getElementById('Login').style.display='none'"class="close">&times;</span>
+						<div class="container">
+							<label for="Identifiant"><b>Identifiant</b></label>
+							<input type="text" id="Identifiant" class="champ inputToP" required>
+							<label for="Password"><b>Password</b></label>
+							<input type="password" id="Password" class="champ inputToP" required>
+							<button type="submit" class="button-F2">Login</button>
+							<button type="button" onclick="change()"class="button-F2">Créer un compte</button>
+							<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+						</div>
+						<div class="container" style="background-color:#f1f1f1">
+							<button type="button" onclick="document.getElementById('Login').style.display='none'" class="cancelbtn">Cancel</button>
+							<span class="psw">Forgot <a href="#">password?</a></span>
+						</div>
+					</form>
+				</div>
+				<div id="Register" class="modal">
+					<form class="modal-content animate" action="">
+						<span onclick="document.getElementById('Register').style.display='none'"class="close">&times;</span>
+						<div class="container">
+							<label for="name"><b>Nom</b></label>
+							<input type="text" id="name" class="champ inputToP" required>
+							<label for="mail">E-mail</label>
+							<input type="text" id="mail" class="champ inputToP" required>
+							<label for="psw"><b>Password</b></label>
+							<input type="password" id="psw" class="champ inputToP" required>
+							<label for="confirmation">Confirmation</label>
+							<input type="password" id="confirmation" class="champ inputToP" required>
+							<label>
+								<input type="checkbox" value="" name="conditions" autocomplete="off">
+								 J'accepte les
+								<a href="" target="_blank">conditions d'utilisations</a>
+							</label>
+							<br>
+							<button type="submit"id="envoi"class="button-F2">Register</button>
+						</div>
+						<div class="container" style="background-color:#f1f1f1">
+							<button type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">Cancel</button>
+						</div>
+					</form>
+				</div>
+				<div id="VerifAge" class="modal">
+					<form class="modal-content animate" >
+						<span onclick="document.getElementById('VerifAge').style.display='none'"class="close">&times;</span>
+						<div class="container">
+							<label for="age"><b>Entrer votre age</b></label>
+							<input type="text" id="VAge" class="inputToP" required>
+							<button type="submit" onclick="VerifAge()">Validation</button>
+						</div>
+					</form>
+				</div>
+				<div id="AvisCookies" class="modal">
+					<form class="modal-content cookies animate">
+						<span onclick="document.getElementById('AvisCookies').style.display='none'" class="close">&times;</span>
+						<div class="container">
+							Ce site utilise des cookies et vous donne le contrôle sur ce que vous souhaitez activer
+							<a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi">plus info</a>
+						</div>
+					</form>
+				</div>
+        <script>
+                  // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
 
-        <div id="Login" class="modal">
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("myBtn").style.display = "block";
+              } else {
+                  document.getElementById("myBtn").style.display = "none";
+              }
+          }
 
-            <form class="modal-content animate" action="">
-                    <span onclick="document.getElementById('Login').style.display='none'"
-                    class="close">&times;</span>
-
-                <div class="container">
-                    <label for="Identifiant"><b>Identifiant</b></label>
-                    <input type="text" id="Identifiant" class="champ inputToP" required>
-
-                    <label for="Password"><b>Password</b></label>
-                    <input type="password" id="Password" class="champ inputToP" required>
-
-                    <button type="submit" class="button-F2">Login</button><button type="button" onclick="change()"class="button-F2">Créer un compte</button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-
-                <div class="container" style="background-color:#f1f1f1">
-
-                    <button type="button" onclick="document.getElementById('Login').style.display='none'" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                </div>
-            </form>
-        </div>
-
-        <div id="Register" class="modal">
-
-            <form class="modal-content animate" action="">
-                    <span onclick="document.getElementById('Register').style.display='none'"
-                    class="close">&times;</span>
-
-                <div class="container">
-                    <label for="name"><b>Nom</b></label>
-                    <input type="text" id="name" class="champ inputToP" required>
-
-                    <label for="mail">E-mail</label>
-                    <input type="text" id="mail" class="champ inputToP" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" id="psw" class="champ inputToP" required>
-
-                    <label for="confirmation">Confirmation</label>
-                    <input type="password" id="confirmation" class="champ inputToP" required>
-
-                    <label>
-                        <input type="checkbox" value="" name="conditions" autocomplete="off"> J'accepte les <a href="" target="_blank">conditions d'utilisations</a>
-                    </label><br>
-                    <button type="submit"id="envoi"class="button-F2">Register</button>
-
-                </div>
-
-                <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">Cancel</button>
-
-                </div>
-            </form>
-        </div>
-        <div id="VerifAge" class="modal">
-            <form class="modal-content animate" >
-                    <span onclick="document.getElementById('VerifAge').style.display='none'"
-                    class="close">&times;</span>
-                <div class="container">
-                        <label for="age"><b>Entrer votre age</b></label>
-                        <input type="text" id="VAge" class="inputToP" required>
-                        <button type="submit" onclick="VerifAge()">Validation</button>
-                </div>
-            </form>
-        </div>
-        <div id="AvisCookies" class="modal">
-                <form class="modal-content cookies animate"><span onclick="document.getElementById('AvisCookies').style.display='none'" class="close">&times;</span>
-                    <div class="container">
-                        Ce site utilise des cookies et vous donne le contrôle sur ce que vous souhaitez activer
-                        <a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi">plus info</a>
-
-                    </div>
-                </form>
-        </div>
-        <script type="text/javascript" src="./cookies/cookies.js"></script>
-        <script src="cookies.js">
-
-        </script>
-        <script src="script.js">
-
-        </script>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
-    </body>
-</html>
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+              document.body.scrollTop = 0; // For Safari
+              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          }
+        </script>  
+				<script type="text/javascript" src="./cookies/cookies.js"></script>
+				<script src="cookies.js">
+				</script>
+				<script src="script.js">
+				</script>
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+      </body>
+		</html>

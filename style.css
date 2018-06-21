@@ -1,302 +1,395 @@
 
-
 .poster {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .jumbotron {
-  padding: 0px;
-  margin: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 .carousel-inner {
-  width: 100%;
-  height: auto ;
-
-  background-position: center center;
-  background-size: cover;
+	width: 100%;
+	height: auto ;
+	background-position: center center;
+	background-size: cover;
 }
 
 .ci1 {
-  background-image: url(./img/poster1.jpg);
-
+	background-image: url(./img/poster1.jpg);
 }
+
 .ci2 {
-  background-image: url(./img/poster2.png);
+	background-image: url(./img/poster2.png);
 }
+
 .ci3 {
-  background-image: url(./img/poster3.jpg);
+	background-image: url(./img/poster3.jpg);
 }
 
-
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
 
 /* Full-width input fields */
-.inputToP{width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    /* border-radius: 25%; */
+.inputToP {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	/* border-radius: 25%;
+	*/
 }
-.inputTS{width: 100%;
-    padding: 9px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    /* border-radius: 10%; */
+
+.inputTS {
+	width: 100%;
+	padding: 9px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	/* border-radius: 10%;
+	*/
 }
+
 /* Set a style for all buttons */
 .button-F {
-    background-color: black;
-    margin: 8px 0;
-    border-radius: 10%;
+	background-color: black;
+	margin: 8px 0;
+	border-radius: 10%;
 }
+
 .button-F2 {
-    background-color: rgb(37, 6, 46);
-    margin: 8px 8px;
-    border-radius: 10%;
-
+	background-color: rgb(37, 6, 46);
+	margin: 8px 8px;
+	border-radius: 10%;
 }
+
 .button-F, .button-F2 {
-
-    color: white;
-    padding: 14px 20px;
-
-    border: none;
-    cursor: pointer;
-    width: 35%;
-
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	cursor: pointer;
+	width: 35%;
 }
-.bpmef{
-    /* height: 100%; */
-    border-radius:0%;
-    margin-top: 8px;
-    margin-bottom: 0px;
-    padding: 9px 4px;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
 
+.bpmef {
+	/* height: 100%;
+	*/
+	border-radius:0%;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	padding: 9px 4px;
+	border-top-right-radius: 10%;
+	border-bottom-right-radius: 10%;
 }
+
 button:hover, .button-F:hover {
-    opacity: 0.4;
+	opacity: 0.4;
 }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
 }
 
 /* Center the image and position the close button */
 .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
 }
 
 img.avatar {
-    width: 40%;
-    border-radius: 50%;
+	width: 40%;
+	border-radius: 50%;
 }
 
 .container {
-    padding: 16px;
+	padding: 16px;
 }
 
 span.psw {
-    float: right;
-    padding-top: 16px;
+	float: right;
+	padding-top: 16px;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 10; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 10;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0,0,0);
+	/* Fallback color */
+	background-color: rgba(0,0,0,0.4);
+	/* Black w/ opacity */
+	padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 40%; /* Could be more or less, depending on screen size */
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 40%;
+	/* Could be more or less, depending on screen size */
 }
 
 .cookies {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 90%; /* Could be more or less, depending on screen size */
-}
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 90%;
+	/* Could be more or less, depending on screen size */
 }
 
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,.close:focus {
+	color: red;
+	cursor: pointer;
 }
 
 /* Add Zoom Animation */
 .animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
+	-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s}
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
+	from
+	{
+	-webkit-transform: scale(0)}
+
+	to
+	{
+	-webkit-transform: scale(1)}
 }
 
 @keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+	from
+	{
+	transform: scale(0)}
+
+	to
+	{
+	transform: scale(1)}
 }
-#reseauSociaux{position: fixed;
-top:350px;
-z-index: 15;}
-.sociaux{padding-bottom: 10px;}
+
+#reseauSociaux {
+	position: fixed;
+	top:350px;
+	z-index: 15;
+}
+
+.sociaux {
+	padding-bottom: 10px;
+}
+
 #twitter {
-    background-color: #09a8ba;
-
-  }
-  #twitter i {
-        padding: 15px 17px;
-    color: #09a8ba;
-  }
-
-  #facebook {
-    background-color: #0027a7;
-
-  }
-  #facebook i {
-    padding: 15px 20px;
-    color: #0027a7;
-  }
-
-  #dribbble {
-    background-color: #da16e4;
-
-  }
-  #dribbble i {
-    padding: 15px 17px;
-    color: #da16e4;
-  }
-
-  #google-plus {
-    background-color: red;
-  }
-  #google-plus i {
-    padding: 15px 13px;
-    color: red;
-  }
-.bpnS{
-
-border-top-right-radius: 30px;
-border-bottom-right-radius: 30px;
-padding: 5px;
-
+	background-color: #09a8ba;
 }
-.bpnS span{
-    display:none;
-    width: 0px;
-    padding: 11px 0px;
-    
-  }
-  .bpnS:active span, .bpnS:focus span{
-    display: inherit;
-    width: 100px;
 
-  }
-  .bpnS span a{color: #FFF;
-  }
+#twitter i {
+	padding: 15px 17px;
+	color: #09a8ba;
+}
 
-  .bpnS:hover{opacity: 2;}
-.bpnS i{
+#facebook {
+	background-color: #0027a7;
+}
 
-    background-color: #fff;
-    border-radius: 100%;
-    float: right;
+#facebook i {
+	padding: 15px 20px;
+	color: #0027a7;
+}
+
+#dribbble {
+	background-color: #da16e4;
+}
+
+#dribbble i {
+	padding: 15px 17px;
+	color: #da16e4;
+}
+
+#google-plus {
+	background-color: red;
+}
+
+#google-plus i {
+	padding: 15px 13px;
+	color: red;
+}
+
+.bpnS {
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	padding: 5px;
+}
+
+.bpnS span {
+	display:none;
+	width: 0px;
+	padding: 11px 0px;
+}
+
+.bpnS:active span, .bpnS:focus span {
+	display: inherit;
+	width: 100px;
+}
+
+.bpnS span a {
+	color: #FFF;
+}
+
+.bpnS:hover {
+	opacity: 2;
+}
+
+.bpnS i {
+	background-color: #fff;
+	border-radius: 100%;
+	float: right;
 }
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-    #navbarP{visibility: visible;}
-    #navbarN{visibility: hidden;}
-}
-@media screen and (max-width: 800px) {
-    #navbarP{visibility: visible;}
-    #navbarN{visibility: hidden;}
-}
-@media screen and (min-width: 800px){
-    #navbarP{visibility: hidden;}
-    #navbarN{visibility: visible;}
-}
-nav{color: #FFF}
-#menu{position: absolute;
-top: 10px;
-left: 30px;
-z-index: 5;}
-#btnForm{
-    color: #fff;
-    background-color: red;
-    padding-left: 20px;
-}
-.colorMauve{color: rgb(119, 32, 153)}
-.carousel-indicators{ z-index: 1;}
+	span.psw
+	{
+		display: block;
+		float: none;
+	}
 
-a{list-style: none;
-    text-decoration: none;}
-.colorRed{color: red}
-.carousel-indicators{
-  z-index: 1;
+	.cancelbtn {
+		width: 100%;
+	}
+
+	#navbarP {
+		visibility: visible;
+	}
+
+	#navbarN {
+		visibility: hidden;
+	}
 }
-.fontCard{
-  font-size: 90%;
+
+@media screen and (max-width: 800px) {
+	#navbarP {
+		visibility: visible;
+	}
+
+	#navbarN {
+		visibility: hidden;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	#navbarP {
+		visibility: hidden;
+	}
+
+	#navbarN {
+		visibility: visible;
+	}
+}
+
+nav {
+color: #FFF}
+
+#menu {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	z-index: 5;
+}
+
+#btnForm {
+	color: #fff;
+	background-color: red;
+	padding-left: 20px;
+}
+
+.colorMauve {
+color: rgb(119, 32, 153)}
+
+.carousel-indicators {
+	z-index: 1;
+}
+
+a {
+	list-style: none;
+	text-decoration: none;
+}
+
+.colorRed {
+color: red}
+
+.carousel-indicators {
+	z-index: 1;
+}
+
+.fontCard {
+	font-size: 90%;
 }
 
 #Films {
-  width: 100%;
-}
-@media screen and (max-width: 575px){
-        
-    }
-@media screen and (min-width: 576px) and (max-width: 767px){
-    
+	width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px){
-    
+@media screen and (max-width: 575px) {
 }
 
-@media screen and (min-width: 992px){
-   
+@media screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
