@@ -215,18 +215,21 @@ z-index: 15;}
 
 border-top-right-radius: 30px;
 border-bottom-right-radius: 30px;
+padding: 5px;
 
 }
 .bpnS span{
     display:none;
     width: 0px;
     padding: 11px 0px;
-    color: #FFF;
+    
   }
   .bpnS:active span, .bpnS:focus span{
     display: inherit;
     width: 100px;
 
+  }
+  .bpnS span a{color: #FFF;
   }
 
   .bpnS:hover{opacity: 2;}
@@ -282,4 +285,18 @@ a{list-style: none;
 
 #Films {
   width: 100%;
+}
+@media screen and (max-width: 575px){
+        
+    }
+@media screen and (min-width: 576px) and (max-width: 767px){
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+}
+
+@media screen and (min-width: 992px){
+   
 }
