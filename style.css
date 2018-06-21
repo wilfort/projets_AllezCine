@@ -62,14 +62,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 }
 .button-F, .button-F2 {
-    
+
     color: white;
     padding: 14px 20px;
-   
+
     border: none;
     cursor: pointer;
     width: 35%;
-    
+
 }
 .bpmef{
     /* height: 100%; */
@@ -79,7 +79,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     padding: 9px 4px;
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
-    
+
 }
 button:hover, .button-F:hover {
     opacity: 0.4;
@@ -179,31 +179,31 @@ z-index: 15;}
 .sociaux{padding-bottom: 10px;}
 #twitter {
     background-color: #09a8ba;
-    
+
   }
   #twitter i {
         padding: 15px 17px;
     color: #09a8ba;
   }
-  
+
   #facebook {
     background-color: #0027a7;
-    
+
   }
   #facebook i {
     padding: 15px 20px;
     color: #0027a7;
   }
-  
+
   #dribbble {
     background-color: #da16e4;
-    
+
   }
   #dribbble i {
     padding: 15px 17px;
     color: #da16e4;
   }
-  
+
   #google-plus {
     background-color: red;
   }
@@ -223,15 +223,15 @@ border-bottom-right-radius: 30px;
     padding: 11px 0px;
     color: #FFF;
   }
-  .bpnS:active span, .bpnS:focus span{ 
+  .bpnS:active span, .bpnS:focus span{
     display: inherit;
     width: 100px;
-    
+
   }
 
   .bpnS:hover{opacity: 2;}
 .bpnS i{
-    
+
     background-color: #fff;
     border-radius: 100%;
     float: right;
