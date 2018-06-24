@@ -2,6 +2,10 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
     <body>
     
@@ -13,8 +17,6 @@
         <button class="button" data-filter=".amour">amour</button>
         <button class="button" data-filter=".horreur">horreur</button>
         <button class="button" data-filter=".triler">triler</button>
-        <button class="button" data-filter="numberGreaterThan50">number > 50</button>
-        <button class="button" data-filter="ium">name ends with &ndash;ium</button>
         </div>
 
         <h2>Sort</h2>
@@ -26,39 +28,75 @@
         <button class="button" data-sort-by="category">category</button>
         </div>
 
-        <div class="grid">
-                <div class="element-item triler " data-category="triler">
+        <div class="grid row" id="test-card">
+                <div class="element-item triler col-2" data-category="triler">
                     <img class="photo" src="../img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
                 </div>
-                <div class="element-item  commedie" data-category="commedie">
-                        <img class="photo" src="../img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+                <div class="element-item  commedie col-2" data-category="commedie">
+                        <img class="photo" src="../img/hostel-2005-thriller.jpg" alt="Card image cap">
                 </div>
-                <div class="element-item commedie triler" data-category="commedie triler">
-                        <img class="photo" src="../img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+                <div class="element-item commedie triler col-2" data-category="commedie triler">
+                        <img class="photo" src="../img/inception-2010-scifi.jpg" alt="Card image cap">
                 </div>
-                <div class="element-item action commedie" data-category="action commedie">
-                        <img class="photo" src="../img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+                <div class="element-item action commedie col-2" data-category="action commedie">
+                        <img class="photo" src="../img/intouchables-2011-comedie.jpg" alt="Card image cap">
                 </div>
-                <div class="element-item amour showfilmM" data-category="amour">
-                        <img class="photo" src="../img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+                <div class="element-item amour col-2" data-category="amour">
+                        <img class="photo" src="../img/lepatientanglais-1996-dramatique.jpg" alt="Card image cap">
+                </div> 
+                <div class="element-item amour col-2" data-category="amour">
+                        <img class="photo" src="../img/lesdeuxtours-2002-aventure.jpg" alt="Card image cap">
                 </div>
-                <div class="element-item amour showfilmM" data-category="amour">
-                        <img class="photo" src="../img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+                <div class="element-item amour commedie col-2" data-category="amour ommedie">
+                        <img class="photo" src="../img/seven-1995-thriller.jpg" alt="Card image cap">
                 </div>
-                <div class="element-item amour commedie showfilmM" data-category="amour ommedie">
-                        <img class="photo" src="../img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+                <div class="element-item action amour col-2" data-category="action amour">
+                        <img class="photo" src="../img/shutterisland-2010-thriller.jpg" alt="Card image cap">
                 </div>
-                <div class="element-item action amour showfilmM" data-category="action amour">
+                <div class="element-item triler col-2 " data-category="triler">
                         <img class="photo" src="../img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
-                </div>
+                    </div>
+                <div class="element-item  commedie col-2 " data-category="commedie">
+                            <img class="photo" src="../img/hostel-2005-thriller.jpg" alt="Card image cap">
+                    </div>
+                <div class="element-item commedie triler col-2 " data-category="commedie triler">
+                            <img class="photo" src="../img/inception-2010-scifi.jpg" alt="Card image cap">
+                    </div>
+                <div class="element-item action commedie col-2 " data-category="action commedie">
+                            <img class="photo" src="../img/intouchables-2011-comedie.jpg" alt="Card image cap">
+                    </div>
+                <div class="element-item amour col-2 cache" data-category="amour">
+                            <img class="photo" src="../img/lepatientanglais-1996-dramatique.jpg" alt="Card image cap">
+                    </div> 
+                <div class="element-item amour col-2 cache" data-category="amour">
+                            <img class="photo" src="../img/lesdeuxtours-2002-aventure.jpg" alt="Card image cap">
+                    </div>
+                <div class="element-item amour commedie col-2 cache" data-category="amour ommedie">
+                            <img class="photo" src="../img/seven-1995-thriller.jpg" alt="Card image cap">
+                    </div>
+                <div class="element-item action amour col-2 cache" data-category="action amour">
+                            <img class="photo" src="../img/shutterisland-2010-thriller.jpg" alt="Card image cap">
+                    </div>
+                <div class="element-item triler col-2 cache" data-category="triler">
+                        <img class="photo" src="../img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+                    </div>
+                <div class="element-item  commedie col-2 cache" data-category="commedie">
+                            <img class="photo" src="../img/hostel-2005-thriller.jpg" alt="Card image cap">
+                    </div>
         </div>
         <div id="sorts" class="button-group">
-            <button class="button showfilmP" onclick="voir()">plus</button>
-            <button class="button showfilmM" onclick="cache()">mois</button>
+            <button class="button" id="showfilmP">plus</button>
+            <button class="button" id="showfilmM">mois</button>
             
         </div>
         
         <script src="isotope.pkgd.min.js"> </script>
             <script src="js.js"> </script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
     </body>
 </html>

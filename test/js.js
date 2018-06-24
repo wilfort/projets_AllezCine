@@ -1,24 +1,26 @@
 // external js: isotope.pkgd.js
+var limitPerPage
 
 
 // init Isotope
-var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows',
-    getSortData: {
-      name: '.name',
-      symbol: '.symbol',
-      number: '.number parseInt',
-      category: '[data-category]',
-      weight: function( itemElem ) {
-        var weight = $( itemElem ).find('.weight').text();
-        return parseFloat( weight.replace( /[\(\)]/g, '') );
-      }
+var $grid=$('.grid').isotope({  
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows',
+  getSortData: {
+    name: '.name',
+    symbol: '.symbol',
+    number: '.number parseInt',
+    category: '[data-category]',
+    weight: function( itemElem ) {
+      var weight = $( itemElem ).find('.weight').text();
+      return parseFloat( weight.replace( /[\(\)]/g, '') );
     }
-  });
+  }
+});
+
+// filter functions
+var filterFns = {
   
-  // filter functions
-  var filterFns = {
     // show if number is greater than 50
     numberGreaterThan50: function() {
       var number = $(this).find('.number').text();
@@ -32,34 +34,60 @@ var $grid = $('.grid').isotope({
   };
   
   // bind filter button click
-  $('#filters').on( 'click', 'button', function() {
-    
+$('#filters').on( 'click', 'button', function() { 
     var filterValue = $( this ).attr('data-filter');
     // use filterFn if matches value
     filterValue = filterFns[ filterValue ] || filterValue;
     $grid.isotope({ filter: filterValue });
+    $('#test-card .element-item').show();
+    $('#test-card .element-item:gt(' + (limitPerPage - 1) +')').hide();
   });
   
   // bind sort button click
-  $('#sorts').on( 'click', 'button', function() {
-    var sortByValue = $(this).attr('data-sort-by');
-    $grid.isotope({ sortBy: sortByValue });
-  });
+// $('#sorts').on( 'click', 'button', function() {
+//     var sortByValue = $(this).attr('data-sort-by');
+//     $grid.isotope({ sortBy: sortByValue });
+//   });
   
   // change is-checked class on buttons
-  $('.button-group').each( function( i, buttonGroup ) {
+$('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
+     
     $buttonGroup.on( 'click', 'button', function() {
+      
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $( this ).addClass('is-checked');
+       
     });
+
   });
-  function voir(){
-    $('.showfilmM').css('display', 'block');
-    $('.showfilmP').css('display', 'none');
-  }
-  function cache(){
-    $('.showfilmP').css('display', 'block');
-    $('.showfilmM').css('display', 'none');
-  } 
+  // function voir(){
+  //   $('.showfilmM').css('display', 'block');
+  //   $('.showfilmP').css('display', 'none');
+  // }
+  // function cache(){
+  //   $('.showfilmP').css('display', 'block');
+  //   $('.showfilmM').css('display', 'none');
+  // } 
+// function relance(){
   
+// }
+limitPerPage = 12;	
+$('#test-card .element-item:gt(' + (limitPerPage - 1) +')').hide();
+$('#showfilmP').on('click', function() {
+  $('#test-card .element-item').show();
+    limitPerPage = 18;
+  $('#showfilmP').css("display","none");
+  $('#showfilmM').css("display","block");
+  
+
+    $('#test-card .element-item:gt(' + (limitPerPage - 1) +')').hide();
+});
+$('#showfilmM').on('click', function() {
+  $('#test-card .element-item').show();
+    limitPerPage = 12;
+  $('#showfilmM').css("display","none");
+  $('#showfilmP').css("display","block");
+      
+    $('#test-card .element-item:gt(' + (limitPerPage - 1) +')').hide();
+});

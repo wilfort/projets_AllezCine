@@ -64,7 +64,7 @@ body {
 
 /* ---- isotope ---- */
 
-.grid {
+/* .grid {
   border: 1px solid #333;
 }
 
@@ -73,7 +73,7 @@ body {
   content: '';
   display: block;
   clear: both;
-}
+} */
 
 /* ---- .element-item ---- */
 
@@ -126,9 +126,9 @@ height: 200px;}
   top: 76px;
   font-size: 12px;
 }
-.showfilmP{display: block;}
-.showfilmM{display: none;}
-
+/* .showfilmP{display: block;}*/
+#showfilmM{display: none;} 
+/* .cache{visibility: hidden} */
 /* .element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
 .element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
 .element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
