@@ -1,5 +1,5 @@
 $(document).ready(function(){
-      
+
     $('.champ').keyup(function(){
             if($(this).val().length < 3){ // si la chaîne de caractères est inférieure à 3
                     $(this).css({ // on rend le champ rouge
@@ -46,12 +46,12 @@ $(document).ready(function(){
         verif($('#psw'));
         verif($('#confirmation'));
         verif($('#mail'));
-        
+
     });
 });
 function verif(nom){if(nom.val() == "")
         {
-        
+
             nom.css({ // on rend le champ rouge
                 borderColor : 'red',
                 color : 'red'
@@ -75,18 +75,37 @@ function change(){
     document.getElementById('Login').style.display = "none";
     document.getElementById('Register').style.display="block";
 }
-window.onload=function() { // Au chargement de la page
-    //window.open(/* ... */); // On ouvre la popup
-    var age =prompt('Quelle est votre age ?')
-    if (age<18)
-            {
-            document.location.href="https://www.imdb.com/";
+
+// window.onload=function() { // Au chargement de la page
+//     window.open(/* ... */); // On ouvre la popup
+//     var age =prompt('Quelle est votre age ?')
+//     if (age<18)
+//             {
+//             document.location.href="https://www.imdb.com/";
+//         }
+//         else if (age>=18)
+//             {
+//                 document.getElementById('VerifAge').style.display = "none";
+//                 document.getElementById('AvisCookies').style.display="block";
+//                 }
+
+
+//   };
+
+
+            // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
         }
-        else if (age>=18)
-            {
-                document.getElementById('VerifAge').style.display = "none";
-                document.getElementById('AvisCookies').style.display="block";
-                }
-    
-    
-  };
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
