@@ -4,6 +4,15 @@
 	height: auto;
 }
 
+@media screen and (min-width: 992px) {
+	.poster {
+	  height: 400px;
+	  width: 100%;
+	  object-fit: none;
+	}
+}
+
+
 .jumbotron {
 	padding: 0px;
 	margin: 0px;
@@ -395,25 +404,6 @@ html {
   font-size: 1rem;
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-}
-
-
 .title {
 	border-left: 3px solid red;
 	margin-left: 5%;
@@ -450,12 +440,3 @@ html {
 .prix {
 	color: red;
 }
-
-
-/* @media screen and (min-width: 768px) and (max-width: 991px) {
-	.carousel-item .img{
-	  height: 400px;
-	  width: auto;
-	  object-fit: none;
-	}
-} */
