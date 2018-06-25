@@ -196,7 +196,7 @@
 				</section>
 
         <div class="title">
-					<h5> FEATURED MOVIES </h5>
+					<h5> <b>FEATURED MOVIES</b> </h5>
         </div>
 
         <section id=FeaturedMovies>
@@ -371,7 +371,7 @@
 				</section>
 
 				<div class="title">
-					<h5> SHOP MOVIES </h5>
+					<h5> <b>SHOP MOVIES</b> </h5>
         </div>
 
 				<section id="ShopMovie">
@@ -503,7 +503,34 @@
 
 
 				<div class="title">
-					<h5> CONTACT US</h5>
+					<h5> <b>CONTACT US</b> </h5>
+				</div>
+
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner" role="listbox">
+				    <div class="carousel-item active">
+				      <div class="img"><img class="d-block img-fluid" src="./img/poster1.jpg" alt="First slide"></div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="img"><img class="d-block img-fluid" src="./img/poster1.jpg" alt="Second slide"></div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="img"><img class="d-block img-fluid" src="./img/poster1.jpg" alt="Third slide"></div>
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
 				</div>
 
 				<section id="ContactUs">
@@ -583,5 +610,10 @@
 				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
 				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
 				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+				<script type="text/javascript">
+				$('#myModal').on('shown.bs.modal', function () {
+					$('#myInput').trigger('focus')
+				})
+				</script>
       </body>
 		</html>
