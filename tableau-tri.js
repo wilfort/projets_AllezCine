@@ -44,8 +44,9 @@ var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
+    var current = document.getElementsByClassName("btn active");
+    console.log(current);
+    current[0].className = current[0].className.replace("active", "");
     this.className += " active";
   });
 }
@@ -56,9 +57,9 @@ $('#showfilmP').on('click', function() {
   $('#showfilmP').css("display","none");
   $('#showfilmM').css("display","block");
   limiteitem=18;
-  y = document.getElementsByClassName("active");
-  console.log(y[2].id);
-  switch(y[2].id){
+  y = document.getElementsByClassName("btn active");
+  console.log(y[0].id);
+  switch(y[0].id){
     case "all": 
       filterSelection("all");
       break;
@@ -78,26 +79,26 @@ $('#showfilmP').on('click', function() {
 });
 $('#showfilmM').on('click', function() {
 
-  $('#showfilmM').css("display","none");
-  $('#showfilmP').css("display","block");
-  limiteitem=12;
-  y = document.getElementsByClassName("active");
-  console.log(y[2].id);
-  switch(y[2].id){
-    case "all": 
-      filterSelection("all");
-      break;
-    case "action": 
-      filterSelection("action");
-      break;
-    case "commedie": 
-      filterSelection("commedie");
-      break;
-    case "amour": 
-      filterSelection("amour");
-      break;
-    case "all": 
-      filterSelection("triler");
-      break;
-  }
+      $('#showfilmM').css("display","none");
+      $('#showfilmP').css("display","block");
+      limiteitem=12;
+      y = document.getElementsByClassName("btn active");
+      console.log(y[0].id);
+      switch(y[0].id){
+        case "all": 
+          filterSelection("all");
+          break;
+        case "action": 
+          filterSelection("action");
+          break;
+        case "commedie": 
+          filterSelection("commedie");
+          break;
+        case "amour": 
+          filterSelection("amour");
+          break;
+        case "all": 
+          filterSelection("triler");
+          break;
+      }
 });

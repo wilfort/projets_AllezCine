@@ -1,8 +1,8 @@
 /* ---- button ---- */
 * { box-sizing: border-box; }
 .filterDiv {
-    background-color: #2196F3;
-    color: #ffffff;
+    /* background-color: #2196F3;
+    color: #ffffff; */
     text-align: center;
     display: none;
   }

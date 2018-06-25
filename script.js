@@ -76,21 +76,21 @@ function change(){
     document.getElementById('Register').style.display="block";
 }
 
-// window.onload=function() { // Au chargement de la page
-//     window.open(/* ... */); // On ouvre la popup
-//     var age =prompt('Quelle est votre age ?')
-//     if (age<18)
-//             {
-//             document.location.href="https://www.imdb.com/";
-//         }
-//         else if (age>=18)
-//             {
-//                 document.getElementById('VerifAge').style.display = "none";
-//                 document.getElementById('AvisCookies').style.display="block";
-//                 }
+window.onload=function() { // Au chargement de la page
+    window.open(/* ... */); // On ouvre la popup
+    var age =prompt('Quelle est votre age ?')
+    if (age<18)
+            {
+            document.location.href="https://www.imdb.com/";
+        }
+        else if (age>=18)
+            {
+                document.getElementById('VerifAge').style.display = "none";
+                document.getElementById('AvisCookies').style.display="block";
+                }
 
 
-//   };
+  };
 
 
             // When the user scrolls down 20px from the top of the document, show the button
