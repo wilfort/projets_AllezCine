@@ -450,12 +450,3 @@ html {
 .prix {
 	color: red;
 }
-
-
-/* @media screen and (min-width: 768px) and (max-width: 991px) {
-	.carousel-item .img{
-	  height: 400px;
-	  width: auto;
-	  object-fit: none;
-	}
-} */
