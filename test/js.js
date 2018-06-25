@@ -1,93 +1,103 @@
-// external js: isotope.pkgd.js
-var limitPerPage
+var limiteitem = 12;
+var testval,memoval;
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  console.log(x.length);
+  memoval=0;
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    testval =x[i].className.indexOf(c);
+    console.log(testval);
+    
+    if ((testval > -1)&&(memoval < limiteitem)) {w3AddClass(x[i], "show");
+    memoval++;}
+  }
+}
 
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) 
+    {element.className += " " + arr2[i];}
+  }
+}
 
-// init Isotope
-var $grid=$('.grid').isotope({  
-  itemSelector: '.element-item',
-  layoutMode: 'fitRows',
-  getSortData: {
-    name: '.name',
-    symbol: '.symbol',
-    number: '.number parseInt',
-    category: '[data-category]',
-    weight: function( itemElem ) {
-      var weight = $( itemElem ).find('.weight').text();
-      return parseFloat( weight.replace( /[\(\)]/g, '') );
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
     }
   }
-});
+  element.className = arr1.join(" ");
+}
 
-// filter functions
-var filterFns = {
-  
-    // show if number is greater than 50
-    numberGreaterThan50: function() {
-      var number = $(this).find('.number').text();
-      return parseInt( number, 10 ) > 50;
-    },
-    // show if name ends with -ium
-    ium: function() {
-      var name = $(this).find('.name').text();
-      return name.match( /ium$/ );
-    }
-  };
-  
-  // bind filter button click
-$('#filters').on( 'click', 'button', function() { 
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    filterValue = filterFns[ filterValue ] || filterValue;
-    $grid.isotope({ filter: filterValue });
-    $('#test-card .element-item').show();
-    $('#test-card .element-item:gt(' + (limitPerPage - 1) +')').hide();
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
   });
-  
-  // bind sort button click
-// $('#sorts').on( 'click', 'button', function() {
-//     var sortByValue = $(this).attr('data-sort-by');
-//     $grid.isotope({ sortBy: sortByValue });
-//   });
-  
-  // change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-     
-    $buttonGroup.on( 'click', 'button', function() {
-      
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-       
-    });
+}
 
-  });
-  // function voir(){
-  //   $('.showfilmM').css('display', 'block');
-  //   $('.showfilmP').css('display', 'none');
-  // }
-  // function cache(){
-  //   $('.showfilmP').css('display', 'block');
-  //   $('.showfilmM').css('display', 'none');
-  // } 
-// function relance(){
-  
-// }
-limitPerPage = 12;	
-$('#test-card .element-item:gt(' + (limitPerPage - 1) +')').hide();
+var y
+
 $('#showfilmP').on('click', function() {
-  $('#test-card .element-item').show();
-    limitPerPage = 18;
   $('#showfilmP').css("display","none");
   $('#showfilmM').css("display","block");
-  
-
-    $('#test-card .element-item:gt(' + (limitPerPage - 1) +')').hide();
+  limiteitem=18;
+  y = document.getElementsByClassName("active");
+  console.log(y[0].id);
+  switch(y[0].id){
+    case "all": 
+      filterSelection("all");
+      break;
+    case "action": 
+      filterSelection("action");
+      break;
+    case "commedie": 
+      filterSelection("commedie");
+      break;
+    case "amour": 
+      filterSelection("amour");
+      break;
+    case "all": 
+      filterSelection("triler");
+      break;
+  }
 });
 $('#showfilmM').on('click', function() {
-  $('#test-card .element-item').show();
-    limitPerPage = 12;
+
   $('#showfilmM').css("display","none");
   $('#showfilmP').css("display","block");
-      
-    $('#test-card .element-item:gt(' + (limitPerPage - 1) +')').hide();
+  limiteitem=12;
+  y = document.getElementsByClassName("active");
+  console.log(y[0].id);
+  switch(y[0].id){
+    case "all": 
+      filterSelection("all");
+      break;
+    case "action": 
+      filterSelection("action");
+      break;
+    case "commedie": 
+      filterSelection("commedie");
+      break;
+    case "amour": 
+      filterSelection("amour");
+      break;
+    case "all": 
+      filterSelection("triler");
+      break;
+  }
 });
