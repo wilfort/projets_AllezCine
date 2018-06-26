@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Newsletter</title>
+    <style>
+     body {
+       font-family: Arial, Helvetica;
+       text-align: center;
+     }
+     table {
+       width: 600px;
+       height: auto;
+       display: inline-block;
+       background-color: #C1BFB1;
+       border-radius: 5px;
+     }
+     #maintitle{
+      background-color: #BBAE98;
+     }
+
+     #tableHeader{
+       background-color: red;
+     }
+     td a {
+       color: white;
+       text-decoration: none;
+     }
+
+     td a:hover {
+       color: #BBAE98;
+     }
+
+     .tdLigne{
+       width: 200px;
+     }
+     .imgPromo{
+       width: 180px;
+       border: solid black 3px;
+     }
+
+     .promo {
+       background-color: black;
+       color: red;
+       padding:0px;
+     }
+     .prix {
+       text-decoration: line-through;
+       display:inline-block;
+     }
+
+     .ppromo {
+       display:inline-block;
+       font-size: 200%;
+       color: red;
+     }
+
+     #footer {
+       font-size: 60%;
+       padding: 5px;
+       color: #606060;
+     }
+
+     #affiche {
+       width: 400px;
+       border: solid black 3px;
+     }
+     #allez {
+       color: red;
+     }
+     #cine {
+       color: white;
+     }
+    </style>
+  </head>
+  <body>
+    <table border="0">
+      <tbody>
+        <tr id="maintitle">
+          <th colspan="3"><h1 id="cine"><span id="allez">Allez</span>Ciné!</h1></th>
+        </tr>
+        <tr id="tableHeader">
+          <td class="tdLigne"><a href="">Films du moment</a></td>
+          <td class="tdLigne"><a href="">Shop Movies</a></td>
+          <td class="tdLigne"><a href="">Contact us</a></td>
+        </tr>
+        <tr>
+          <td colspan="3"><h1 class="promo">Promos du mois</h1></td>
+        </tr>
+        <tr>
+          <td class="tdLigne"><img class="imgPromo" src="./img/wonderwoman.jpg"></td>
+          <td class="tdLigne"><img class="imgPromo" src="./img/churchill.jpg"></td>
+          <td class="tdLigne"><img class="imgPromo" src="./img/beau-la-vie.jpg"></td>
+        </tr>
+        <tr>
+          <td class="tdLigne"> <p class=""><b>Fantasy/Sci-Fi</b></p></td>
+          <td class="tdLigne"> <p class=""><b>Drame/Thriller</b></p></td>
+          <td class="tdLigne"> <p class=""><b>Comédie</b></p></td>
+        </tr>
+        <tr>
+          <td class="tdLigne"> <p class="prix">15€</p> <p class ="ppromo">12€</p> </td>
+          <td class="tdLigne"> <p class="prix">15€</p> <p class ="ppromo">10€</p> </td>
+          <td class="tdLigne"> <p class="prix">15€</p> <p class ="ppromo">7,5€</p> </td>
+        </tr>
+        <tr>
+          <td colspan="3"><h1 class="promo">Film à l'affiche</h1></td>
+        </tr>
+        <tr>
+          <td colspan="3"><img id="affiche" src="./img/timbuktu.jpg"></td>
+        </tr>
+        <tr>
+          <td colspan="3"><h3>"Un drame politique qui vous fera voyager au plus profond de l'humanité"</h3></td>
+        </tr>
+        <tr>
+          <td id="footer" colspan="3">
+            <p>Offre valable jusqu'au 15/07/2018 depuis cette newsletter uniquement sur www.allezcine.com.</p>
+            <p>® Marque déposée par AllezCiné *<p>
+            <p>Conformément à la loi du 8 décembre 1992 sur la protection des données à caractère personnel, vous disposez d'un droit d'accès et de rectification des données personnelles vous concernant. AllezCiné vous informe que les renseignements personnels fournis lors de votre commande sont utilisés pour vous proposer des services personnalisés et vous tenir informé de ses promotions.Pour exercer ce droit, adressez-vous à : contact@allez-cine.be ou écrivez à AllezCiné, Service Fichier, rue Cantersteen, 50 - 1000 Bruxelles (Belgique). </p>
+            <p>Si vous souhaitez vous désabonner des newsletters AllezCiné, rendez-vous sur <a href="">cette page.</a></p>
+          </td>
+        </tr>
+     </tbody>
+    </table>
+  </body>
+</html>
