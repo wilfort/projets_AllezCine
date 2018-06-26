@@ -85,8 +85,7 @@ window.onload=function() { // Au chargement de la page
         }
         else if (age>=18)
             {
-                document.getElementById('VerifAge').style.display = "none";
-                document.getElementById('AvisCookies').style.display="block";
+                ouvrirModal("AvisCookies");
                 }
 
 

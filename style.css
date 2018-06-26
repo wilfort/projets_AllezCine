@@ -431,7 +431,6 @@ margin-right: 10px;}
 }
 [class*="col-"]{
     padding:0px 5px;
-
 }
 #menu{position: absolute;
     top: 10px;
@@ -498,3 +497,8 @@ margin-right: 10px;}
 	  object-fit: none;
 	}
 } */
+
+
+/* modale */
+#AvisCookies
+{display: none;}
