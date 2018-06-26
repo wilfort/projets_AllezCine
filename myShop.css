@@ -1,0 +1,55 @@
+
+  
+  /* Hide the images by default */
+  .myShop {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .viewShop {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    padding: 12px 16px;
+      color: #FFF;
+      background-color: black
+
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .prev {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+      opacity: 0.8;
+  }
+  
+  
+  /* Add a transparency effect for thumnbail images */
+  .cursor {
+    opacity: 0.6;
+  }
+  
+  .active .cursor,
+  .cursor:hover {
+    opacity: 1;
+  }
+  #posiBpsSHOP{text-align: right;}
+  .container-body{
+      background-color: rgb(40, 40, 40);
+      color: #FFF;
+  }
+  .container-body b, .container-body h4,.container-body .row .col-3,.container-body .row .col-1{
+      color: red;
+  }

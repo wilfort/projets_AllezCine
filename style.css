@@ -1,17 +1,8 @@
 
 .poster {
 	width: 100%;
-	height: auto;
+	object-fit: none;
 }
-
-@media screen and (min-width: 992px) {
-	.poster {
-	  height: 400px;
-	  width: 100%;
-	  object-fit: none;
-	}
-}
-
 
 .jumbotron {
 	padding: 0px;
@@ -20,10 +11,10 @@
 
 .carousel-inner {
 	width: 100%;
-	height: auto ;
 	background-position: center center;
 	background-size: cover;
 }
+/* .carousel-item{height: 500px ;} */
 
 .ci1 {
 	background-image: url(./img/poster1.jpg);
@@ -210,68 +201,56 @@ animation: animatezoom 0.6s}
 	{
 	transform: scale(1)}
 }
-
-#reseauSociaux {
-	position: fixed;
-	top:350px;
-	z-index: 15;
-}
-
-.sociaux {
-	padding-bottom: 10px;
-}
-
+#reseauSociaux{position: fixed;
+top:150px;
+z-index: 15;}
+.sociaux{padding-bottom: 10px;}
 #twitter {
 	background-color: #09a8ba;
 }
 
-#twitter i {
-	padding: 15px 17px;
-	color: #09a8ba;
-}
+  #twitter i {
+        padding: 5px 7px;
+    color: #09a8ba;
+  }
 
 #facebook {
 	background-color: #0027a7;
 }
-
-#facebook i {
-	padding: 15px 20px;
-	color: #0027a7;
-}
+  #facebook i {
+    padding:5px 10px;
+    color: #0027a7;
+  }
 
 #dribbble {
 	background-color: #da16e4;
 }
-
-#dribbble i {
-	padding: 15px 17px;
-	color: #da16e4;
-}
-
-#google-plus {
-	background-color: red;
-}
-
-#google-plus i {
-	padding: 15px 13px;
-	color: red;
-}
+  #dribbble i {
+    padding: 5px 7px;
+    color: #da16e4;
+  }
+  #google-plus {
+    background-color: red;
+  }
+  #google-plus i {
+    padding: 5px 3px;
+    color: red;
+  }
 
 .bpnS {
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
 	padding: 5px;
 }
-
-.bpnS span {
-	display:none;
-	width: 0px;
-	padding: 11px 0px;
-}
-
-.bpnS:active span, .bpnS:focus span {
-	display: inherit;
-	width: 100px;
+.bpnS span{
+    display:none;
+    width: 0px;
+    padding: 1px 0px;
+    
+  }
+  .bpnS:active span, .bpnS:focus span{
+    display: inherit;
+    width: 100px;
 }
 
 .bpnS span a {
@@ -289,6 +268,30 @@ animation: animatezoom 0.6s}
 }
 
 /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 700px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+    #navbarP{display: block;}
+    #navbarN{display: none;}
+}
+@media screen and (min-width: 700px){
+    #navbarP{display: none;}
+    #navbarN{display: block;}
+}
+nav{
+    color: #FFF}
+#Search
+{float: right;}
+#btnForm{
+    color: #fff;
+    background-color: red;
+	padding-left: 20px;
+}
 @media screen and (max-width: 300px) {
 	span.psw
 	{
@@ -368,17 +371,7 @@ color: red}
 	width: 100%;
 }
 
-@media screen and (max-width: 575px) {
-}
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-}
-
-@media screen and (min-width: 992px) {
-}
 
 #myBtn {
     display: none; /* Hidden by default */
@@ -404,6 +397,10 @@ html {
   font-size: 1rem;
 }
 
+.fontCard{
+  font-size: 18px;
+}
+
 .title {
 	border-left: 3px solid red;
 	margin-left: 5%;
@@ -413,9 +410,57 @@ html {
 	padding-top: 7px;
 	padding-bottom: 3px;
 }
-
+.row .TextTailCard{font-size: 14px;
+margin-left: 5px;
+margin-right: 10px;}
+.row{margin:0px;}
 #Films {
 	margin-top: 3%;
+}
+[class*="col-"]{
+    padding:0px 5px;
+}
+#menu{position: absolute;
+    top: 10px;
+    left: 30px;
+    right: 30px;
+    z-index: 5;
+    padding:0px;}
+#menu h3{padding:0px;
+        }
+#navbarN a{
+    color: #FFF;
+    font-size: 14px;
+}
+#navbarP a{
+    color: #FFF;
+    font-size: 14px;
+}
+#navbarP .dropdown-menu{background-color: #f44336;}
+.input-group{
+    width: 200px;
+}
+@media screen and (max-width: 575px){
+	.poster ,.carousel-inner{
+		height: 200px;
+	  }
+    }
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .poster,.carousel-inner {
+		height: 300px;
+	  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+		.poster,.carousel-inner {
+		  height: 400px;
+		}
+}
+
+@media screen and (min-width: 992px){
+	.poster,.carousel-inner {
+		height: 500px;
+	  }
 }
 
 .card-body {
@@ -439,4 +484,21 @@ html {
 
 .prix {
 	color: red;
+}
+
+
+/* @media screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-item .img{
+	  height: 400px;
+	  width: auto;
+	  object-fit: none;
+	}
+} */
+
+
+/* modale */
+#AvisCookies,#film1,#film2,#film3,#film4,#film5
+{display: none;}
+.carousel-item img{
+	padding: 0px;
 }
