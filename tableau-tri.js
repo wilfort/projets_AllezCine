@@ -56,6 +56,7 @@ var y
 $('#showfilmP').on('click', function() {
   $('#showfilmP').css("display","none");
   $('#showfilmM').css("display","block");
+  $('#showfilmM').css("text-align","center");
   limiteitem=18;
   y = document.getElementsByClassName("btn active");
   console.log(y[0].id);
@@ -66,21 +67,42 @@ $('#showfilmP').on('click', function() {
     case "action": 
       filterSelection("action");
       break;
-    case "commedie": 
-      filterSelection("commedie");
+      case "aventure": 
+      filterSelection("aventure");
       break;
-    case "amour": 
+      case "amour": 
       filterSelection("amour");
       break;
-    case "all": 
-      filterSelection("triler");
+    case "comedie": 
+      filterSelection("comedie");
       break;
+    case "drame": 
+      filterSelection("drame");
+      break;
+      case "fantasy": 
+      filterSelection("fantasy");
+      break;
+      case "guerre": 
+      filterSelection("guerre");
+      break;
+      case "sci-fi": 
+      filterSelection("sci-fi");
+      break;
+      case "thriller": 
+      filterSelection("thriller");
+      break;
+      case "western": 
+      filterSelection("western");
+      break;
+
   }
 });
 $('#showfilmM').on('click', function() {
 
       $('#showfilmM').css("display","none");
       $('#showfilmP').css("display","block");
+
+      $('#showfilmP').css("text-align","center");
       limiteitem=12;
       y = document.getElementsByClassName("btn active");
       console.log(y[0].id);
@@ -91,14 +113,32 @@ $('#showfilmM').on('click', function() {
         case "action": 
           filterSelection("action");
           break;
-        case "commedie": 
-          filterSelection("commedie");
+        case "aventure": 
+          filterSelection("aventure");
           break;
         case "amour": 
           filterSelection("amour");
           break;
-        case "all": 
-          filterSelection("triler");
+        case "comedie": 
+          filterSelection("comedie");
+          break;
+        case "drame": 
+          filterSelection("drame");
+          break;
+        case "fantasy": 
+          filterSelection("fantasy");
+          break;
+        case "guerre": 
+          filterSelection("guerre");
+          break;
+        case "sci-fi": 
+          filterSelection("sci-fi");
+          break;
+        case "thriller": 
+          filterSelection("thriller");
+          break;
+        case "western": 
+          filterSelection("western");
           break;
       }
 });

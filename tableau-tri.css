@@ -33,6 +33,11 @@
     color: white;
   }
   
-  #showfilmM{display: none;} 
-  
+  #showfilmM{display: none;
+    padding: 5px 10px;
+    border-radius: 20px;} 
+    #showfilmP{
+      padding: 5px 10px;
+      border-radius: 20px;} 
   .photo{width: 100%;}
+  #sorts,#showfilmP,#showfilmM{text-align: center;}
