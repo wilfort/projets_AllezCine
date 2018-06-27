@@ -50,9 +50,9 @@ Début : lundi 18 juin 2018, 9h30.
 Deadline : vendredi 29 juin 2018, 16h30.  
 Durée : 2 semaines.
 
-### Etat :
+## Etat :
 Terminé et rendu.
 
-### Lieux :
+## Lieux :
 Be-Central, bureaux de BeCode.org.  
 Cantersteen 12, 1000 Bruxelles (Gare de Bruxelles-Central).
