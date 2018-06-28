@@ -1,1223 +1,1515 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-    <head>
-        <title>Allez Cine</title>
-        <meta charset="utf-8">
-        <meta name="theme-color" content="#317EFB" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+		<title>Allez Cine</title>
+		<meta charset="utf-8">
+		<meta name="theme-color" content="#317EFB" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="tableau-tri.css">
 		<link rel="stylesheet" href="myShop.css">
-    </head>
-    <body>
-      <header>
-
-                          <nav class="navbar navbar-expand" id="menu">
-                              <div class="navbar-brand">
-                              <h3><span class="colorRed"><b>ALLEZ</span>CINE!</b></h3>
-                              </div>
-                              <div class="collapse navbar-collapse" >
-                                                        <div id="navbarP">
-                                                            <ul class="navbar-nav">
-                                                                <li class="nav-item dropdown">
-                                                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop"data-toggle="dropdown">
-                                                                        <span class="fa fa-bars">
-                                                                    <div class="dropdown-menu">
-                                                                        <a class="nav-link"href="#">
-                                                                             Home</a>
-                                                                        <a class="nav-link" href="#Films">
-                                                                            Films</a>
-                                                                        <a class="nav-link"  href="#FeaturedMovies">
-                                                                            Featured Movies</a>
-                                                                        <a class="nav-link"  href="#ShopMovie">
-                                                                            Shop Movie</a>
-                                                                        <a class="nav-link" href="#Footer">
-                                                                            Footer</a>
-                                                                        <a class="nav-link" href="#ContactUs">
-                                                                            Contact</a>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                    <div id="navbarN">
-                                        <ul class="nav nav-pills nav-fill">
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="navAct" href="#">
-                                                Home</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link"  href="#Films">
-                                                    Films</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#FeaturedMovies">
-                                                    Featured Movies</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link"  href="#ShopMovie">
-                                                    Shop Movie</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#Footer">
-                                                    Footer</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#ContactUs">
-                                                    Contact</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div id="Search">
-                                        <div class="input-group">
-                                                <input type="text" class="form-control inputTS"  placeholder="Search">
-                                                <div class="input-group-btn">
-                                                  <button class="btn btn-default bpmef" type="submit">
-                                                    <i class="fa fa-search"></i>
-                                                  </button>
-                                                </div>
-                                              </div>
-                                </div>
-                          </nav>
-                      <div id="demo" class="carousel slide jumbotron jumbotron-fluid" data-ride="carousel">
-                        <!-- Nav -->
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                          <li data-target="#demo" data-slide-to="0" class="active"></li>
-                          <li data-target="#demo" data-slide-to="1"></li>
-                          <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/poster1.jpg" alt="Ocean's 8" class="poster mx-auto d-block img-thumbnail">
-                          </div>
-                          <div class="carousel-item">
-
-                            <img src="./img/poster2.png" alt="Solo : a Star Wars Story" class="poster mx-auto d-block img-thumbnail">
-                          </div>
-                          <div class="carousel-item">
-
-                            <img src="./img/poster3.jpg" alt="Jurassic World" class="poster mx-auto d-block img-thumbnail">
-                          </div>
-                        </div>
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                          <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                          <span class="carousel-control-next-icon"></span>
-                        </a>
-                      </div>
-                    <!-- Forms -->
-                    </div>
-                    <div id="btnForm">
-                          <i class="fa fa-phone" aria-hidden="true"></i>(+000) 009 455 4088
-
-                          <button class="button-F" onclick="document.getElementById('Login').style.display='block'" style="width:auto;">Login</button>
-                          <button class="button-F" onclick="document.getElementById('Register').style.display='block'" style="width:auto;">Register</button>
-
-                      </div>
-                  </header>
-
-        <section id="reseauSociaux">
-            <div class="sociaux">
-                <button class="bpnS"id="twitter">
-                    <span>twitter</span>
-                    <i class="fa fa-twitter"></i>
-                </button>
-
-            </div>
-            <div class="sociaux">
-                <button class="bpnS" id="facebook">
-                    <span>facebook</span>
-                    <i class="fa fa-facebook" ></i>
-                </button>
-            </div>
-            <div class="sociaux">
-                <button class="bpnS" id="dribbble">
-                    <span>dribbble</span>
-                    <i class="fa fa-dribbble"></i>
-                </button>
-            </div>
-            <div class="sociaux">
-                <button class="bpnS" id="google-plus">
-                    <span>google plus</span>
-                    <i class="fa fa-google-plus"></i>
-                </button>
-            </div>
-        </section>
-        <section id="Films">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand" id="menu">
+				<div class="navbar-brand">
+					<h3>
+						<span class="colorRed"><b>ALLEZ</span>CINE!</b>
+					</h3>
+				</div>
+				<div class="collapse navbar-collapse" >
+					<div id="navbarP">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbardrop"data-toggle="dropdown">
+									<span class="fa fa-bars">
+										<div class="dropdown-menu">
+											<a class="nav-link" href="#">Home</a>
+											<a class="nav-link" href="#Films">Films</a>
+											<a class="nav-link" href="#FeaturedMovies">Featured Movies</a>
+											<a class="nav-link" href="#ShopMovie">Shop Movie</a>
+											<a class="nav-link" href="#Footer">Footer</a>
+											<a class="nav-link" href="#ContactUs">Contact</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div id="navbarN">
+								<ul class="nav nav-pills nav-fill">
+									<li class="nav-item"><a class="nav-link" id="navAct" href="#">Home</a></li>
+									<li class="nav-item"><a class="nav-link"  href="#Films">Films</a></li>
+									<li class="nav-item"><a class="nav-link" href="#FeaturedMovies">Featured Movies</a></li>
+									<li class="nav-item"><a class="nav-link"  href="#ShopMovie">Shop Movie</a></li>
+									<li class="nav-item"><a class="nav-link" href="#Footer">Footer</a></li>
+									<li class="nav-item"><a class="nav-link" href="#ContactUs">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="Search">
+							<div class="input-group">
+								<input type="text" class="form-control inputTS"  placeholder="Search">
+								<div class="input-group-btn">
+									<button class="btn btn-default bpmef" type="submit"><i class="fa fa-search"></i></button>
+								</div>
+							</div>
+						</div>
+					</nav>
+					<div id="demo" class="carousel slide jumbotron jumbotron-fluid" data-ride="carousel">
+						<!-- Nav -->
+						<!-- Indicators -->
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+						</ul>
+						<!-- The slideshow -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="./img/poster1.jpg" alt="Ocean's 8" class="poster mx-auto d-block img-thumbnail">
+							</div>
+							<div class="carousel-item">
+								<img src="./img/poster2.png" alt="Solo : a Star Wars Story" class="poster mx-auto d-block img-thumbnail">
+							</div>
+							<div class="carousel-item">
+								<img src="./img/poster3.jpg" alt="Jurassic World" class="poster mx-auto d-block img-thumbnail">
+							</div>
+						</div>
+						<!-- Left and right controls -->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+						<a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+					</div>
+					<!-- Forms -->
+				</div>
+				<div id="btnForm">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					(+000) 009 455 4088
+					<button class="button-F" onclick="document.getElementById('Login').style.display='block'" style="width:auto;">Login</button>
+					<button class="button-F" onclick="document.getElementById('Register').style.display='block'" style="width:auto;">Register</button>
+				</div>
+			</header>
+			<section id="reseauSociaux">
+				<div class="sociaux">
+					<button class="bpnS"id="twitter">
+						<span>Twitter</span>
+						<i class="fa fa-twitter"></i>
+					</button>
+				</div>
+				<div class="sociaux">
+					<button class="bpnS" id="facebook">
+						<span>Facebook</span>
+						<i class="fa fa-facebook" ></i>
+					</button>
+				</div>
+				<div class="sociaux">
+					<button class="bpnS" id="dribbble">
+						<span>Dribbble</span>
+						<i class="fa fa-dribbble"></i>
+					</button>
+				</div>
+				<div class="sociaux">
+					<button class="bpnS" id="google-plus">
+						<span>Google Plus</span>
+						<i class="fa fa-google-plus"></i>
+					</button>
+				</div>
+			</section>
+			<section id="Films">
 				<div class="title">
-						<h5> <b>Films</b> </h5>
-					</div>
-            <div class="row mx-auto">
-                    <div class="col-12 mx-auto d-flex">
-                        <div class="row mx-auto d-flex text-center">
-
-
-
-									<div class="col-12 col-sm-6 col-md-4 col-lg-2 offset-lg-1">
-										<div class="card" onclick="ouvrirModal('film1')">
-											<img class="card-img-top " src="./img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
-											<div class="card-body">
-												<h4 class="card-title text-center fontCard">Batman Movie</h4>
-												<div class="row TextTailCard">
-													<div class="col-6 text-left">
-														2017
-													</div>
-													<div class="col-6 text-right">
-														Comédie
-													</div>
-												</div>
-
+					<h5>
+						<b>Films</b>
+					</h5>
+				</div>
+				<div class="row mx-auto">
+					<div class="col-12 mx-auto d-flex">
+						<div class="row mx-auto d-flex text-center">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-2 offset-lg-1">
+								<div class="card" onclick="ouvrirModal('film1')">
+									<img class="card-img-top " src="./img/batmanmovie-2017-comedie.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title text-center fontCard">Batman Movie</h4>
+										<div class="row TextTailCard">
+											<div class="col-6 text-left">
+												2017
+											</div>
+											<div class="col-6 text-right">
+												<b>Comédie</b>
 											</div>
 										</div>
-
-									</div>
-									<div class="col-12 col-sm-6 col-md-4 col-lg-2">
-										<div class=" card" onclick="ouvrirModal('film2')">
-											<img class="card-img-top" src="img/intouchables-2011-comedie.jpg" alt="Card image cap">
-											<div class="card-body">
-												<h4 class="card-title text-center fontCard">Intouchables</h4>
-												<div class="row TextTailCard">
-													<div class="col-6 text-left">
-														2011
-													</div>
-													<div class="col-6 text-right">
-														Comédie
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 col-sm-6 col-md-4 col-lg-2">
-										<div class="card" onclick="ouvrirModal('film3')">
-											<img class="card-img-top" src="img/thefall-2006-dramatique.jpg" alt="Card image cap">
-											<div class="card-body">
-												<h4 class="card-title text-center text-left fontCard">The Fall</h4>
-												<div class="row TextTailCard">
-													<div class="col-6 text-left">
-														2006
-													</div>
-													<div class="col-6 text-right">
-														Dramatique
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="col-12 col-sm-6 col-md-4 offset-md-2 col-lg-2 offset-lg-0">
-										<div class="card" onclick="ouvrirModal('film4')">
-											<img class="card-img-top" src="img/shutterisland-2010-thriller.jpg" alt="Card image cap">
-											<div class="card-body">
-												<h4 class="card-title text-center fontCard">Shutter Island</h4>
-												<div class="row TextTailCard">
-													<div class="col-6 text-left">
-														2010
-													</div>
-													<div class="col-6 text-right">
-														Thriller
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-2 offset-lg-0">
-										<div class="card" onclick="ouvrirModal('film5')">
-											<img class="card-img-top" src="img/swissarmyman-2016-comedie.jpg" alt="Card image cap">
-											<div class="card-body">
-												<h4 class="card-title text-center fontCard">Swiss Army Man</h4>
-												<div class="row TextTailCard">
-													<div class="col-6 text-left">
-														2016
-													</div>
-													<div class="col-6 text-right">
-														Comédie
-													</div>
-												</div>
-											</div>
-										</div>
-
-
 									</div>
 								</div>
-
-                    </div>
-            </div>
-		</section>
-
-        <section id=FeaturedMovies>
-			<div class="title">
-				<h5> <b>FEATURED MOVIES</b> </h5>
-			</div>
-			<div class="row">
-				<div class="col-10 offset-1">
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+								<div class=" card" onclick="ouvrirModal('film2')">
+									<img class="card-img-top" src="img/intouchables-2011-comedie.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title text-center fontCard">Intouchables</h4>
+										<div class="row TextTailCard">
+											<div class="col-6 text-left">
+												2011
+											</div>
+											<div class="col-6 text-right">
+												<b>Comédie</b>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+								<div class="card" onclick="ouvrirModal('film3')">
+									<img class="card-img-top" src="img/thefall-2006-dramatique.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title text-center text-left fontCard">The Fall</h4>
+										<div class="row TextTailCard">
+											<div class="col-6 text-left">
+												2006
+											</div>
+											<div class="col-6 text-right">
+												<b>Dramatique</b>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 offset-md-2 col-lg-2 offset-lg-0">
+								<div class="card" onclick="ouvrirModal('film4')">
+									<img class="card-img-top" src="img/shutterisland-2010-thriller.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title text-center fontCard">Shutter Island</h4>
+										<div class="row TextTailCard">
+											<div class="col-6 text-left">
+												2010
+											</div>
+											<div class="col-6 text-right">
+												<b>Thriller</b>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 offset-sm-3 col-md-4 offset-md-0 col-lg-2 offset-lg-0">
+								<div class="card" onclick="ouvrirModal('film5')">
+									<img class="card-img-top" src="img/swissarmyman-2016-comedie.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h4 class="card-title text-center fontCard">Swiss Army Man</h4>
+										<div class="row TextTailCard">
+											<div class="col-6 text-left">
+												2016
+											</div>
+											<div class="col-6 text-right">
+												<b>Comédie</b>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id=FeaturedMovies>
+				<div class="title">
+					<h5>
+						<b>FEATURED MOVIES</b>
+					</h5>
+				</div>
+				<div class="row">
+					<div class="col-10 offset-1">
 						<div id="myBtnContainer">
-								<button class="btn active" onclick="filterSelection('all')" id="all">Show All</button>
-								<button class="btn" onclick="filterSelection('action')" id="action">Action</button>
-								<button class="btn" onclick="filterSelection('aventure')" id="aventure">Aventure</button>
-								<button class="btn" onclick="filterSelection('amour')" id="amour">Amour</button>
-								<button class="btn" onclick="filterSelection('comedie')" id="comedie">Comédie</button>
-								<button class="btn" onclick="filterSelection('drame')" id="drame">Drame</button>
-								<button class="btn" onclick="filterSelection('fantasy')" id="fantasy">Fantasy</button>
-								<button class="btn" onclick="filterSelection('guerre')" id="guerre">Guerre</button>
-								<button class="btn" onclick="filterSelection('sci-fi')" id="sci-fi">Sci-Fi</button>
-								<button class="btn" onclick="filterSelection('thriller')" id="thriller">Thriller</button>
-								<button class="btn" onclick="filterSelection('western')" id="western">Western</button>
-							</div>
-							<div class="container row" id="test-card">
-								<div class="col-12">
-									<div class="row">
-
-
-										<div class="filterDiv aventure fantasy col-4 col-lg-2">
-												<div class="card">
-														<img class="card-img-top" src="./img/lehobbit.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																Le Hobbit
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2017</p>
-															</div>
-														</div>
-												</div>
-										</div>
-										<div class="filterDiv amour comedie col-4 col-lg-2" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/bienvenue-chtis.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center ">
-																Bienvenue chez les Ch'tis
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2011</p>
-															</div>
-														</div>
-												</div>
-										</div>
-										<div class="filterDiv aventure fantasy col-4 col-lg-2" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/animaux-fantastiques.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center text-left">
-																Les Animaux Fantastiques
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2006</p>
-															</div>
-														</div>
-													</div>
-										</div>
-										<div class="filterDiv comedie col-4 col-lg-2" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/baby-sitting.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																Baby Sitting
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2010</p>
-															</div>
-														</div>
-													</div>
-										</div>
-										<div class="filterDiv comedie col-4 col-lg-2" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/beau-la-vie.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																C'est beau la vie
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2016</p>
-															</div>
-														</div>
-													</div>
-										</div>
-										<div class="filterDiv drame thriller col-4 col-lg-2">
-												<div class=" card">
-														<img class="card-img-top" src="./img/churchill.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																Churchill
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2016</p>
-															</div>
-														</div>
-													</div>
-										</div>
-										<div class="filterDiv drame thriller col-4 col-lg-2" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/conspiracy.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																Conspiracy
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2017</p>
-															</div>
-														</div>
-													</div>
-										</div>
-										<div class="filterDiv drame aventure col-4 col-lg-2" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/dernier-loup.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center ">
-																Le dernier loup
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2011</p>
-															</div>
-														</div>
-												</div>
-										</div>
-										<div class="filterDiv drame col-4 col-lg-2 " >
-												<div class=" card">
-														<img class="card-img-top" src="./img/cornouaille.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center text-left">
-																Cornouaille
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2006</p>
-															</div>
-														</div>
-													</div>
-											</div>
-										<div class="filterDiv comedie col-4 col-lg-2 " >
-												<div class=" card">
-														<img class="card-img-top" src="./img/deja-tes-yeux.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																Déjà tes yeux
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2010</p>
-															</div>
-														</div>
-													</div>
-											</div>
-										<div class="filterDiv action guerre col-4 col-lg-2 ">
-												<div class=" card">
-														<img class="card-img-top" src="./img/HHhH.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																HHhH
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2016</p>
-															</div>
-														</div>
-													</div>
-											</div>
-										<div class="filterDiv drame western col-4 col-lg-2 " >
-												<div class=" card">
-														<img class="card-img-top" src="./img/homesman.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																Homesman
-															</h6>
-															<div class="card-text">
-																<p class="pull-left">2016</p>
-															</div>
-														</div>
-													</div>
-											</div>
-										<div class="filterDiv drame col-4 col-lg-2 cache" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/isola.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																	isola
-															</h6>
-															<div class="card-text">
-																<p class="pull-left"></p>
-															</div>
-														</div>
-													</div>
-											</div>
-										<div class="filterDiv drame thriller col-4 col-lg-2 cache" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/rage-au-ventre.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																	rage au ventre
-															</h6>
-															<div class="card-text">
-																<p class="pull-left"></p>
-															</div>
-														</div>
-													</div>
-											</div>
-										<div class="filterDiv thriller action col-4 col-lg-2 cache" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/taken3.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																	taken 3
-															</h6>
-															<div class="card-text">
-																<p class="pull-left"></p>
-															</div>
-														</div>
-													</div>
-											</div>
-										<div class="filterDiv drame col-4 col-lg-2 cache" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/timbuktu.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																	timbuktu
-															</h6>
-															<div class="card-text">
-																<p class="pull-left"></p>
-															</div>
-														</div>
-													</div>
-											</div>
-										<div class="filterDiv drame col-4 col-lg-2 cache" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/un-sac-de-billes.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																	un sac de billes
-															</h6>
-															<div class="card-text">
-																<p class="pull-left"></p>
-															</div>
-														</div>
-													</div>
-											</div>
-										<div class="filterDiv sci-fi fantasy col-4 col-lg-2 cache" >
-												<div class=" card">
-														<img class="card-img-top" src="./img/wonderwoman.jpg" alt="Card image cap">
-														<div class="card-body">
-															<h6 class="card-title text-center">
-																	wonder woman
-															</h6>
-															<div class="card-text">
-																<p class="pull-left"></p>
-															</div>
-														</div>
-													</div>
-											</div>
-									</div>
-								</div>
-							</div>
-							<div id="sorts" class="mx-auto">
-								<button class="button mx-auto" id="showfilmP">Plus de films</button>
-								<button class="button mx-auto" id="showfilmM">Mois de films</button>
-
-							</div>
+							<button class="btn active" onclick="filterSelection('all')" id="all">Show All</button>
+							<button class="btn" onclick="filterSelection('action')" id="action">Action</button>
+							<button class="btn" onclick="filterSelection('aventure')" id="aventure">Aventure</button>
+							<button class="btn" onclick="filterSelection('amour')" id="amour">Amour</button>
+							<button class="btn" onclick="filterSelection('comedie')" id="comedie">Comédie</button>
+							<button class="btn" onclick="filterSelection('drame')" id="drame">Drame</button>
+							<button class="btn" onclick="filterSelection('fantasy')" id="fantasy">Fantasy</button>
+							<button class="btn" onclick="filterSelection('guerre')" id="guerre">Guerre</button>
+							<button class="btn" onclick="filterSelection('sci-fi')" id="sci-fi">Sci-Fi</button>
+							<button class="btn" onclick="filterSelection('thriller')" id="thriller">Thriller</button>
+							<button class="btn" onclick="filterSelection('western')" id="western">Western</button>
 						</div>
-					</div>
-
-				</section>
-
-
-
-				<section id="ShopMovie">
-					<div class="title">
-						<h5> <b>SHOP MOVIES</b> </h5>
-					</div>
-					<div class="row SM">
-						<div class="col-7">
-							<div class="row FM">
-								<div class="col-3 FM">
-									<div class="card viewSHOP" onclick="currentShow(1)">
-										<img class="card-img-top cursor" src="./img/zoolander-2001-comedie.jpg" alt="Card image cap">
-										<div class="card-body">
-											<h6 class="card-title text-center">
-												Zoolander
-											</h6>
-											<div class="card-text">
-												<p class="pull-left">2002</p>
-												<p class="pull-right prix"><b>15 €</b></p>
+						<div class="container row" id="test-card">
+							<div class="col-12">
+								<div class="row">
+									<div class="filterDiv aventure fantasy col-4 col-lg-2">
+										<div class="card">
+											<img class="card-img-top" src="./img/lehobbit.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													Le Hobbit
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2017
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-3 FM">
-									<div class="card viewSHOP" onclick="currentShow(2)">
-										<img class="card-img-top cursor" src="./img/inception-2010-scifi.jpg" alt="Card image cap">
-										<div class="card-body">
-											<h6 class="card-title text-center">
-												Inception
-											</h6>
-											<div class="card-text">
-												<p class="pull-left">2010</p>
-												<p class="pull-right prix"><b>15 €</b></p>
+									<div class="filterDiv amour comedie col-4 col-lg-2" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/bienvenue-chtis.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center ">
+													Bienvenue chez les Ch'tis
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2011
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-3 FM">
-									<div class="card viewSHOP" onclick="currentShow(3)">
-										<img class="card-img-top cursor" src="./img/lepatientanglais-1996-dramatique.jpg" alt="Card image cap">
-										<div class="card-body">
-											<h6 class="card-title text-center">
-												Le Patient Anglais
-											</h6>
-											<div class="card-text">
-												<p class="pull-left">1996</p>
-												<p class="pull-right prix"><b>15 €</b></p>
+									<div class="filterDiv aventure fantasy col-4 col-lg-2" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/animaux-fantastiques.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center text-left">
+													Les Animaux Fantastiques
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2006
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-3 FM">
-									<div class="card viewSHOP" onclick="currentShow(4)">
-										<img class="card-img-top cursor" src="./img/lesdeuxtours-2002-aventure.jpg" alt="Card image cap">
-										<div class="card-body">
-											<h6 class="card-title text-center">
-												Les Deux Tours
-											</h6>
-											<div class="card-text">
-												<p class="pull-left">2002</p>
-												<p class="pull-right prix"><b>15 €</b></p>
+									<div class="filterDiv comedie col-4 col-lg-2" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/baby-sitting.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													Baby Sitting
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2010
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-3 FM">
-									<div class="card viewSHOP"  onclick="currentShow(5)">
-										<img class="card-img-top cursor" src="./img/seven-1995-thriller.jpg" alt="Card image cap">
-										<div class="card-body">
-											<h6 class="card-title text-center">
-												Seven
-											</h6>
-											<div class="card-text">
-												<p class="pull-left">1996</p>
-												<p class="pull-right prix"><b>15 €</b></p>
+									<div class="filterDiv comedie col-4 col-lg-2" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/beau-la-vie.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													C'est beau la vie
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2016
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-3 FM">
-									<div class="card viewSHOP"  onclick="currentShow(6)">
-										<img class="card-img-top cursor" src="./img/starwarsempire-1980-scifi.jpg" alt="Card image cap">
-										<div class="card-body">
-											<h6 class="card-title text-center">
-												Star Wars Empire
-											</h6>
-											<div class="card-text">
-												<p class="pull-left">1980</p>
-												<p class="pull-right prix"><b>15 €</b></p>
+									<div class="filterDiv drame thriller col-4 col-lg-2">
+										<div class=" card">
+											<img class="card-img-top" src="./img/churchill.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													Churchill
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2016
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-3 FM">
-									<div class="card viewSHOP"  onclick="currentShow(7)">
-										<img class="card-img-top cursor" src="./img/Survivestyle5-2004-comedie.jpg" alt="Card image cap">
-										<div class="card-body">
-											<h6 class="card-title text-center">
-												Survive Style 5
-											</h6>
-											<div class="card-text">
-												<p class="pull-left">2004</p>
-												<p class="pull-right prix"><b>15 €</b></p>
+									<div class="filterDiv drame thriller col-4 col-lg-2" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/conspiracy.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													Conspiracy
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2017
+													</p>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-3 FM">
-									<div class="card viewSHOP"  onclick="currentShow(8)">
-										<img class="card-img-top cursor" src="./img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="Card image cap">
-										<div class="card-body">
-											<h6 class="card-title text-center">
-												What We Do in the Shadows
-											</h6>
-											<div class="card-text">
-												<p class="pull-left">2014</p>
-												<p class="pull-right prix"><b>15 €</b></p>
+									<div class="filterDiv drame aventure col-4 col-lg-2" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/dernier-loup.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center ">
+													Le dernier loup
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2011
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv drame col-4 col-lg-2 " >
+										<div class=" card">
+											<img class="card-img-top" src="./img/cornouaille.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center text-left">
+													Cornouaille
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2006
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv comedie col-4 col-lg-2 " >
+										<div class=" card">
+											<img class="card-img-top" src="./img/deja-tes-yeux.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													Déjà tes yeux
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2010
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv action guerre col-4 col-lg-2 ">
+										<div class=" card">
+											<img class="card-img-top" src="./img/HHhH.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													HHhH
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2016
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv drame western col-4 col-lg-2 " >
+										<div class=" card">
+											<img class="card-img-top" src="./img/homesman.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													Homesman
+												</h6>
+												<div class="card-text">
+													<p class="pull-left">
+														2016
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv drame col-4 col-lg-2 cache" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/isola.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													isola
+												</h6>
+												<div class="card-text">
+													<p class="pull-left"></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv drame thriller col-4 col-lg-2 cache" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/rage-au-ventre.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													rage au ventre
+												</h6>
+												<div class="card-text">
+													<p class="pull-left"></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv thriller action col-4 col-lg-2 cache" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/taken3.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													taken 3
+												</h6>
+												<div class="card-text">
+													<p class="pull-left"></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv drame col-4 col-lg-2 cache" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/timbuktu.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													timbuktu
+												</h6>
+												<div class="card-text">
+													<p class="pull-left"></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv drame col-4 col-lg-2 cache" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/un-sac-de-billes.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													un sac de billes
+												</h6>
+												<div class="card-text">
+													<p class="pull-left"></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="filterDiv sci-fi fantasy col-4 col-lg-2 cache" >
+										<div class=" card">
+											<img class="card-img-top" src="./img/wonderwoman.jpg" alt="Card image cap">
+											<div class="card-body">
+												<h6 class="card-title text-center">
+													wonder woman
+												</h6>
+												<div class="card-text">
+													<p class="pull-left"></p>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-5">
-							<div id="posiBpsSHOP">
-								<button class="prev" onclick="plusShop(-1)">
-									<<
-									</button>
-								<button class="next" onclick="plusShop(1)">
-									>>
-								</button>
-							</div>
-								<div class="container">
-										<div class="myShop">
-											<div class="card">
-
-												<div class="container-body">
-														<iframe width="100%" height="250" src="https://www.youtube.com/embed/YtQq0T3ExLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-														<div class="row">
-															<div class="col-12">
-																	<h4 class="card-title "><b>Zoolander</b></h4>
-															</div>
-															<div class="col-3 my-auto">Story </div>
-															<div class="col-1 my-auto">:</div>
-															<div class="col-8">Derek Zoolander, un célèbre mannequin, est à l'apogée de sa carrière. Couronné trois fois de suite Top model de l'année, il est sur le point de recevoir son quatrième trophée lorsque ce titre lui est ravi par un jeune et ambitieux challenger : Hansel. Effondrée, l'idole des podiums décide d'abandonner l'univers futile de la mode pour se ressourcer au sein de sa famille en Pennsylvanie.</div>
-
-															<div class="col-3">Date de sortie</div>
-															<div class="col-1">:</div>
-															<div class="col-8">2 janvier 2002</div>
-
-															<div class="col-3">Genres</div>
-															<div class="col-1">:</div>
-															<div class="col-8">Comédie</div>
-
-															<div class="col-3">Price</div>
-															<div class="col-1">:</div>
-															<div class="col-8">15€</div>
-														</div>
-
-												</div>
-											</div>
-										</div>
-										<div class="myShop">
-												<div class="card">
-													<div class="container-body">
-															<iframe width="100%" height="250" src="https://www.youtube.com/embed/PQvoKjade9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-														<div class="row">
-															<div class="col-12"><h4 class="card-title">Inception</h4></div>
-															<div class="col-3 my-auto">Story </div>
-															<div class="col-1 my-auto">:</div>
-															<div class="col-8">Dom Cobb est un voleur expérimenté dans l'art périlleux de `l'extraction' : sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l'univers trouble de l'espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier. Cependant, une ultime mission pourrait lui permettre de retrouver sa vie d'avant.</div>
-
-															<div class="col-3">Date de sortie</div>
-															<div class="col-1">:</div>
-															<div class="col-8">21 juillet 2010</div>
-
-															<div class="col-3">Genres</div>
-															<div class="col-1">:</div>
-															<div class="col-8">Science fiction, Thriller</div>
-
-															<div class="col-3">Price</div>
-															<div class="col-1">:</div>
-															<div class="col-8">15€</div>
-														</div>
-
-													</div>
-												</div>
-										</div>
-										<div class="myShop">
-												<div class="card">
-
-														<div class="container-body">
-															<iframe width="100%" height="250" src="https://www.youtube.com/embed/FguRZAv_LS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-															<div class="row">
-																<div class="col-12"><h4 class="card-title">LE PATIENT ANGLAIS</h4></div>
-																<div class="col-3 my-auto">Story </div>
-																<div class="col-1 my-auto">:</div>
-																<div class="col-8">1945, Italie. La fin de la guerre est proche. Hana, une infirmière canadienne, s'installe en Toscane dans un monastère abandonné afin de veiller sur son patient amnésique et défiguré dont les jours sont comptés. Le passé de celui-ci refait surface lorsqu'un mystérieux personnage, Caravaggio, se présente, affirmant connaître l'identité du patient anglais.
-																	</div>
-
-																<div class="col-3">Date de sortie</div>
-																<div class="col-1">:</div>
-																<div class="col-8">6 novembre 1996</div>
-
-																<div class="col-3">Genres</div>
-																<div class="col-1">:</div>
-																<div class="col-8">Comédie dramatique</div>
-
-																<div class="col-3">Price</div>
-																<div class="col-1">:</div>
-																<div class="col-8">15€</div>
-															</div>
-
-														</div>
-													</div>
-										</div>
-										<div class="myShop">
-												<div class="card">
-														<div class="container-body">
-																<iframe width="100%" height="250" src="https://www.youtube.com/embed/c9blKqmyeV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-															<div class="row">
-																	<div class="col-12"><h4 class="card-title">Le Seigneur des anneaux : Les Deux Tours</h4></div>
-																<div class="col-3 my-auto">Story </div>
-																<div class="col-1 my-auto">:</div>
-																<div class="col-8">Après la mort de Boromir et la disparition de Gandalf, la `Communauté' s'est scindée en trois. Perdus dans les collines d'`Emyn Muil', Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'anneau magique. Gollum promet de conduire les `Hobbits' jusqu'à la `Porte Noire' du `Mordor'. A travers la `Terre du Milieu', Aragorn, Legolas et Gimli font route vers le `Rohan', le royaume assiégé de Theoden.
-																	</div>
-
-																<div class="col-3">Date de sortie</div>
-																<div class="col-1">:</div>
-																<div class="col-8">18 décembre 2002</div>
-
-																<div class="col-3">Genres</div>
-																<div class="col-1">:</div>
-																<div class="col-8">Fantastique, Aventure, Action</div>
-
-																<div class="col-3">Price</div>
-																<div class="col-1">:</div>
-																<div class="col-8">15€</div>
-															</div>
-
-														</div>
-													</div>
-										</div>
-										<div class="myShop">
-												<div class="card">
-														<div class="container-body">
-																<iframe width="100%" height="250" src="https://www.youtube.com/embed/7XBzCZtDHBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-															<div class="row">
-																	<div class="col-12"><h4 class="card-title">Seven</h4></div>
-																<div class="col-3 my-auto">Story </div>
-																<div class="col-1 my-auto">:</div>
-																<div class="col-8">Peu avant sa retraite, l'inspecteur William Somerset, un flic désabusé, est chargé de faire équipe avec un jeune idéaliste, David Mills. Ils enquêtent tout d'abord sur le meurtre d'un homme obèse que son assassin a obligé à manger jusqu'à ce que mort s'ensuive. L'enquête vient à peine de commencer qu'un deuxième crime, tout aussi macabre, est commis, puis un troisième. Petit à petit, les deux policiers font le lien entre tous ces assassinats.
-																	</div>
-
-																<div class="col-3">Date de sortie</div>
-																<div class="col-1">:</div>
-																<div class="col-8">2 février 1996</div>
-
-																<div class="col-3">Genres</div>
-																<div class="col-1">:</div>
-																<div class="col-8">Policier, Thriller</div>
-
-																<div class="col-3">Price</div>
-																<div class="col-1">:</div>
-																<div class="col-8">15€</div>
-															</div>
-
-														</div>
-													</div>
-										</div>
-										<div class="myShop">
-											<div class="card">
-												<div class="container-body">
-														<iframe width="100%" height="250" src="https://www.youtube.com/embed/Z7B0vfamFTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-													<div class="row">
-														<div class="col-12">
-															<h4 class="card-title">Star Wars, épisode V : L'Empire contre-attaque
-																</h4>
-														</div>
-														<div class="col-3 my-auto">Story </div>
-														<div class="col-1 my-auto">:</div>
-														<div class="col-8">Malgré la destruction de l'Etoile Noire, l'Empire maintient son emprise sur la galaxie, et poursuit sans relâche sa lutte contre l'Alliance rebelle. Basés sur la planète glacée de Hoth, les rebelles essuient un assaut des troupes impériales. Parvenus à s'échapper, la princesse Leia, Han Solo, Chewbacca et C-3P0 se dirigent vers Bespin, la cité des nuages gouvernée par Lando Calrissian, ancien compagnon de Han.
-															</div>
-
-														<div class="col-3">Date de sortie</div>
-														<div class="col-1">:</div>
-														<div class="col-8">4 septembre 1980 </div>
-
-														<div class="col-3">Genres</div>
-														<div class="col-1">:</div>
-														<div class="col-8">Science fiction, Aventure, Fantastique</div>
-
-														<div class="col-3">Price</div>
-														<div class="col-1">:</div>
-														<div class="col-8">15€</div>
-													</div>
-
-												</div>
-											</div>
-										</div>
-										<div class="myShop">
-											<div class="card">
-												<div class="container-body">
-														<iframe width="100%" height="250" src="https://www.youtube.com/embed/LEH7nDkiPEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-													<div class="row">
-															<div class="col-12"><h4 class="card-title ">Survive Style 5+
-																</h4></div>
-														<div class="col-3 my-auto">Story </div>
-														<div class="col-1 my-auto">:</div>
-														<div class="col-8">Un mari et sa femme mourante, un hypnotiseur à succès, une publicitaire, un homme convaincu d'être un oiseau, un gang de trois voleurs et un tueur à gages. Les vies de ces différents personnages, qui a priori n'ont pas grand chose en commun, vont se retrouver étroitement liées, s'entremêler et s'acheminer inexorablement vers une fin des plus surprenantes.</div>
-
-														<div class="col-3">Date de sortie</div>
-														<div class="col-1">:</div>
-														<div class="col-8">28 septembre 2004 </div>
-
-														<div class="col-3">Genres</div>
-														<div class="col-1">:</div>
-														<div class="col-8">Comédie dramatique</div>
-
-														<div class="col-3">Price</div>
-														<div class="col-1">:</div>
-														<div class="col-8">15€</div>
-													</div>
-
-												</div>
-											</div>
-										</div>
-										<div class="myShop">
-											<div class="card">
-												<div class="container-body">
-														<iframe width="100%" height="250" src="https://www.youtube.com/embed/Cv568AzZ-i8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-													<div class="row">
-															<div class="col-12"><h4 class="card-title">Vampires en toute intimité</h4></div>
-														<div class="col-3 my-auto">Story </div>
-														<div class="col-1 my-auto">:</div>
-														<div class="col-8">Comment fait-on quand on est vampires depuis des siècles et qu'on doit discrètement vivre en coloc en 2015 dans la banlieue de Limoges ? C'est ce que nous propose de découvrir une équipe de documentaire, en partageant l'intimité d'une bande de potes suceurs de sang ! Geoffroy, Miguel, Aymeric et Bernard nous ouvrent les portes de leur coeur et celle de leur quotidien un tout petit peu complexe.
-															</div>
-
-														<div class="col-3">Date de sortie</div>
-														<div class="col-1">:</div>
-														<div class="col-8">30 octobre 2014</div>
-
-														<div class="col-3">Genres</div>
-														<div class="col-1">:</div>
-														<div class="col-8">Comédie</div>
-
-														<div class="col-3">Price</div>
-														<div class="col-1">:</div>
-														<div class="col-8">15€</div>
-													</div>
-
-												</div>
-											</div>
-										</div>
-								</div>
+						<div id="sorts" class="mx-auto">
+							<button class="button mx-auto" id="showfilmP">Plus de films</button>
+							<button class="button mx-auto" id="showfilmM">Mois de films</button>
 						</div>
 					</div>
-				</section>
-
-
-				<section id="ContactUs">
-					<div class="title">
-						<h5> <b>CONTACT US</b> </h5>
-					</div>
-					<div id="formulaire">
-						<div class="row">
-							<div class="col-6">
-						
-						<form action="">
-							<div  class="row">
-								<div class="col-6"><input type="text" value="FIRST NAME"></div>
-								<div class="col-6"><input type="text"value="LAST NAME"></div>
-								<div class="col-6"><input type="text"value="EMAIL"></div>
-								<div class="col-6"><input type="text"value="SUJECT"></div>
-								<div class="col-12"><textarea name="" id="" cols="30" rows="10"value="YOUR MESSAGE">YOUR MESSAGE</textarea></div>
+				</div>
+			</section>
+			<section id="ShopMovie">
+				<div class="title">
+					<h5>
+						<b>SHOP MOVIES</b>
+					</h5>
+				</div>
+				<div class="row SM">
+					<div class="col-7">
+						<div class="row FM">
+							<div class="col-3 FM">
+								<div class="card viewSHOP" onclick="currentShow(1)">
+									<img class="card-img-top cursor" src="./img/zoolander-2001-comedie.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h6 class="card-title text-center">
+											Zoolander
+										</h6>
+										<div class="card-text">
+											<p class="pull-left">
+												2002
+											</p>
+											<p class="pull-right prix">
+												<b>15 €</b>
+											</p>
+										</div>
+									</div>
+								</div>
 							</div>
-							<button>SEND MESSAGE</button>
-						</form> </div>
-						<div div class="col-6"><div  class="row">
-								<div class="col-12">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1299766.5303444786!2d2.6622522291660475!3d50.48566885157783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x282305869b481065!2sAmical+Cin%C3%A9!5e0!3m2!1sfr!2sbe!4v1530093462819" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div></div></div> </div></div>
-
-				</section>
-				<section id="Footer">
-						<div >
-							<form action="" class="text-center">
-								<label for="">SUBSCRIBR TO US</label><br>
-								<input type="text"><button>SUBSCRIBE</button>
+							<div class="col-3 FM">
+								<div class="card viewSHOP" onclick="currentShow(2)">
+									<img class="card-img-top cursor" src="./img/inception-2010-scifi.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h6 class="card-title text-center">
+											Inception
+										</h6>
+										<div class="card-text">
+											<p class="pull-left">
+												2010
+											</p>
+											<p class="pull-right prix">
+												<b>15 €</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3 FM">
+								<div class="card viewSHOP" onclick="currentShow(3)">
+									<img class="card-img-top cursor" src="./img/lepatientanglais-1996-dramatique.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h6 class="card-title text-center">
+											Le Patient Anglais
+										</h6>
+										<div class="card-text">
+											<p class="pull-left">
+												1996
+											</p>
+											<p class="pull-right prix">
+												<b>15 €</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3 FM">
+								<div class="card viewSHOP" onclick="currentShow(4)">
+									<img class="card-img-top cursor" src="./img/lesdeuxtours-2002-aventure.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h6 class="card-title text-center">
+											Les Deux Tours
+										</h6>
+										<div class="card-text">
+											<p class="pull-left">
+												2002
+											</p>
+											<p class="pull-right prix">
+												<b>15 €</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3 FM">
+								<div class="card viewSHOP"  onclick="currentShow(5)">
+									<img class="card-img-top cursor" src="./img/seven-1995-thriller.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h6 class="card-title text-center">
+											Seven
+										</h6>
+										<div class="card-text">
+											<p class="pull-left">
+												1996
+											</p>
+											<p class="pull-right prix">
+												<b>15 €</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3 FM">
+								<div class="card viewSHOP"  onclick="currentShow(6)">
+									<img class="card-img-top cursor" src="./img/starwarsempire-1980-scifi.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h6 class="card-title text-center">
+											Star Wars Empire
+										</h6>
+										<div class="card-text">
+											<p class="pull-left">
+												1980
+											</p>
+											<p class="pull-right prix">
+												<b>15 €</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3 FM">
+								<div class="card viewSHOP"  onclick="currentShow(7)">
+									<img class="card-img-top cursor" src="./img/Survivestyle5-2004-comedie.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h6 class="card-title text-center">
+											Survive Style 5
+										</h6>
+										<div class="card-text">
+											<p class="pull-left">
+												2004
+											</p>
+											<p class="pull-right prix">
+												<b>15 €</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3 FM">
+								<div class="card viewSHOP"  onclick="currentShow(8)">
+									<img class="card-img-top cursor" src="./img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="Card image cap">
+									<div class="card-body">
+										<h6 class="card-title text-center">
+											What We Do in the Shadows
+										</h6>
+										<div class="card-text">
+											<p class="pull-left">
+												2014
+											</p>
+											<p class="pull-right prix">
+												<b>15 €</b>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-5">
+						<div id="posiBpsSHOP">
+							<button class="prev" onclick="plusShop(-1)">
+								<
+								<
+							</button>
+							<button class="next" onclick="plusShop(1)"></button>
+						</div>
+						<div class="container">
+							<div class="myShop">
+								<div class="card">
+									<div class="container-body">
+										<iframe width="100%" height="250" src="https://www.youtube.com/embed/YtQq0T3ExLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<div class="row">
+											<div class="col-12">
+												<h4 class="card-title "><b>Zoolander</b></h4>
+											</div>
+											<div class="col-3 my-auto">
+												Story
+											</div>
+											<div class="col-1 my-auto">
+												:
+											</div>
+											<div class="col-8">
+												Derek Zoolander, un célèbre mannequin, est à l'apogée de sa carrière. Couronné trois fois de suite Top model de l'année, il est sur le point de recevoir son quatrième trophée lorsque ce titre lui est ravi par un jeune et ambitieux challenger : Hansel. Effondrée, l'idole des podiums décide d'abandonner l'univers futile de la mode pour se ressourcer au sein de sa famille en Pennsylvanie.
+											</div>
+											<div class="col-3">
+												Date de sortie
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												2 janvier 2002
+											</div>
+											<div class="col-3">
+												Genres
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												Comédie
+											</div>
+											<div class="col-3">
+												Price
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												15€
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="myShop">
+								<div class="card">
+									<div class="container-body">
+										<iframe width="100%" height="250" src="https://www.youtube.com/embed/PQvoKjade9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<div class="row">
+											<div class="col-12">
+												<h4 class="card-title">Inception</h4>
+											</div>
+											<div class="col-3 my-auto">
+												Story
+											</div>
+											<div class="col-1 my-auto">
+												:
+											</div>
+											<div class="col-8">
+												Dom Cobb est un voleur expérimenté dans l'art périlleux de `l'extraction' : sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l'univers trouble de l'espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier. Cependant, une ultime mission pourrait lui permettre de retrouver sa vie d'avant.
+											</div>
+											<div class="col-3">
+												Date de sortie
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												21 juillet 2010
+											</div>
+											<div class="col-3">
+												Genres
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												Science fiction, Thriller
+											</div>
+											<div class="col-3">
+												Price
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												15€
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="myShop">
+								<div class="card">
+									<div class="container-body">
+										<iframe width="100%" height="250" src="https://www.youtube.com/embed/FguRZAv_LS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<div class="row">
+											<div class="col-12">
+												<h4 class="card-title">LE PATIENT ANGLAIS</h4>
+											</div>
+											<div class="col-3 my-auto">
+												Story
+											</div>
+											<div class="col-1 my-auto">
+												:
+											</div>
+											<div class="col-8">
+												1945, Italie. La fin de la guerre est proche. Hana, une infirmière canadienne, s'installe en Toscane dans un monastère abandonné afin de veiller sur son patient amnésique et défiguré dont les jours sont comptés. Le passé de celui-ci refait surface lorsqu'un mystérieux personnage, Caravaggio, se présente, affirmant connaître l'identité du patient anglais.
+											</div>
+											<div class="col-3">
+												Date de sortie
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												6 novembre 1996
+											</div>
+											<div class="col-3">
+												Genres
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												Comédie dramatique
+											</div>
+											<div class="col-3">
+												Price
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												15€
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="myShop">
+								<div class="card">
+									<div class="container-body">
+										<iframe width="100%" height="250" src="https://www.youtube.com/embed/c9blKqmyeV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<div class="row">
+											<div class="col-12">
+												<h4 class="card-title">Le Seigneur des anneaux : Les Deux Tours</h4>
+											</div>
+											<div class="col-3 my-auto">
+												Story
+											</div>
+											<div class="col-1 my-auto">
+												:
+											</div>
+											<div class="col-8">
+												Après la mort de Boromir et la disparition de Gandalf, la `Communauté' s'est scindée en trois. Perdus dans les collines d'`Emyn Muil', Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'anneau magique. Gollum promet de conduire les `Hobbits' jusqu'à la `Porte Noire' du `Mordor'. A travers la `Terre du Milieu', Aragorn, Legolas et Gimli font route vers le `Rohan', le royaume assiégé de Theoden.
+											</div>
+											<div class="col-3">
+												Date de sortie
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												18 décembre 2002
+											</div>
+											<div class="col-3">
+												Genres
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												Fantastique, Aventure, Action
+											</div>
+											<div class="col-3">
+												Price
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												15€
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="myShop">
+								<div class="card">
+									<div class="container-body">
+										<iframe width="100%" height="250" src="https://www.youtube.com/embed/7XBzCZtDHBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<div class="row">
+											<div class="col-12">
+												<h4 class="card-title">Seven</h4>
+											</div>
+											<div class="col-3 my-auto">
+												Story
+											</div>
+											<div class="col-1 my-auto">
+												:
+											</div>
+											<div class="col-8">
+												Peu avant sa retraite, l'inspecteur William Somerset, un flic désabusé, est chargé de faire équipe avec un jeune idéaliste, David Mills. Ils enquêtent tout d'abord sur le meurtre d'un homme obèse que son assassin a obligé à manger jusqu'à ce que mort s'ensuive. L'enquête vient à peine de commencer qu'un deuxième crime, tout aussi macabre, est commis, puis un troisième. Petit à petit, les deux policiers font le lien entre tous ces assassinats.
+											</div>
+											<div class="col-3">
+												Date de sortie
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												2 février 1996
+											</div>
+											<div class="col-3">
+												Genres
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												Policier, Thriller
+											</div>
+											<div class="col-3">
+												Price
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												15€
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="myShop">
+								<div class="card">
+									<div class="container-body">
+										<iframe width="100%" height="250" src="https://www.youtube.com/embed/Z7B0vfamFTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<div class="row">
+											<div class="col-12">
+												<h4 class="card-title">Star Wars, épisode V : L'Empire contre-attaque</h4>
+											</div>
+											<div class="col-3 my-auto">
+												Story
+											</div>
+											<div class="col-1 my-auto">
+												:
+											</div>
+											<div class="col-8">
+												Malgré la destruction de l'Etoile Noire, l'Empire maintient son emprise sur la galaxie, et poursuit sans relâche sa lutte contre l'Alliance rebelle. Basés sur la planète glacée de Hoth, les rebelles essuient un assaut des troupes impériales. Parvenus à s'échapper, la princesse Leia, Han Solo, Chewbacca et C-3P0 se dirigent vers Bespin, la cité des nuages gouvernée par Lando Calrissian, ancien compagnon de Han.
+											</div>
+											<div class="col-3">
+												Date de sortie
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												4 septembre 1980
+											</div>
+											<div class="col-3">
+												Genres
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												Science fiction, Aventure, Fantastique
+											</div>
+											<div class="col-3">
+												Price
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												15€
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="myShop">
+								<div class="card">
+									<div class="container-body">
+										<iframe width="100%" height="250" src="https://www.youtube.com/embed/LEH7nDkiPEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<div class="row">
+											<div class="col-12">
+												<h4 class="card-title ">Survive Style 5+</h4>
+											</div>
+											<div class="col-3 my-auto">
+												Story
+											</div>
+											<div class="col-1 my-auto">
+												:
+											</div>
+											<div class="col-8">
+												Un mari et sa femme mourante, un hypnotiseur à succès, une publicitaire, un homme convaincu d'être un oiseau, un gang de trois voleurs et un tueur à gages. Les vies de ces différents personnages, qui a priori n'ont pas grand chose en commun, vont se retrouver étroitement liées, s'entremêler et s'acheminer inexorablement vers une fin des plus surprenantes.
+											</div>
+											<div class="col-3">
+												Date de sortie
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												28 septembre 2004
+											</div>
+											<div class="col-3">
+												Genres
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												Comédie dramatique
+											</div>
+											<div class="col-3">
+												Price
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												15€
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="myShop">
+								<div class="card">
+									<div class="container-body">
+										<iframe width="100%" height="250" src="https://www.youtube.com/embed/Cv568AzZ-i8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<div class="row">
+											<div class="col-12">
+												<h4 class="card-title">Vampires en toute intimité</h4>
+											</div>
+											<div class="col-3 my-auto">
+												Story
+											</div>
+											<div class="col-1 my-auto">
+												:
+											</div>
+											<div class="col-8">
+												Comment fait-on quand on est vampires depuis des siècles et qu'on doit discrètement vivre en coloc en 2015 dans la banlieue de Limoges ? C'est ce que nous propose de découvrir une équipe de documentaire, en partageant l'intimité d'une bande de potes suceurs de sang ! Geoffroy, Miguel, Aymeric et Bernard nous ouvrent les portes de leur coeur et celle de leur quotidien un tout petit peu complexe.
+											</div>
+											<div class="col-3">
+												Date de sortie
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												30 octobre 2014
+											</div>
+											<div class="col-3">
+												Genres
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												Comédie
+											</div>
+											<div class="col-3">
+												Price
+											</div>
+											<div class="col-1">
+												:
+											</div>
+											<div class="col-8">
+												15€
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="ContactUs">
+				<div class="title">
+					<h5>
+						<b>CONTACT US</b>
+					</h5>
+				</div>
+				<div id="formulaire">
+					<div class="row">
+						<div class="col-6">
+							<form action="">
+								<div  class="row">
+									<div class="col-6">
+										<input type="text" value="FIRST NAME">
+									</div>
+									<div class="col-6">
+										<input type="text"value="LAST NAME">
+									</div>
+									<div class="col-6">
+										<input type="text"value="EMAIL">
+									</div>
+									<div class="col-6">
+										<input type="text"value="SUJECT">
+									</div>
+									<div class="col-12">
+										<textarea name="" id="" cols="30" rows="10"value="YOUR MESSAGE">YOUR MESSAGE</textarea>
+									</div>
+								</div>
+								<button>SEND MESSAGE</button>
 							</form>
-							
 						</div>
-						<br><br>
-						<div class="row">
-							<div class="col">
-								<div class="titleFooter">RELEASE</div>
-								<br>
-								<div>
-									<p>2018</p>
-									<p>2017</p>
-									<p>2016</p>
-									<p>2015</p>
-									<p>2014</p>
-									<p>2013</p>
-									<p>2012</p>
-									<p>2011</p>
+						<div div class="col-6">
+							<div  class="row">
+								<div class="col-12">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1299766.5303444786!2d2.6622522291660475!3d50.48566885157783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x282305869b481065!2sAmical+Cin%C3%A9!5e0!3m2!1sfr!2sbe!4v1530093462819" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</div>
-								
-							</div>
-							<br>
-							<div class="col">
-								<div class="titleFooter">MOVIES</div>
-								<br>
-								<div>
-									<p>action</p>
-									<p>aventure</p>
-									<p>amour</p>
-									<p>comedie</p>
-									<p>drame</p>
-									<p>fantasy</p>
-									<p>guerre</p>
-									<p>sci-fi</p>
-									<p>thriller</p>
-									<p>western</p>
-								</div>
-								
-							</div>
-							<div class="col">
-								<div class="titleFooter">REVIEW MOVIES</div>
-								<div id="revmov">
-									<span class="genreForm">action</span>
-										<span class="genreForm">aventure</span>
-										<span class="genreForm">amour</span>
-										<span class="genreForm">comedie</span>
-										<span class="genreForm">drame</span>
-										<span class="genreForm">fantasy</span>
-										<span class="genreForm">guerre</span>
-										<span class="genreForm">sci-fi</span>
-										<span class="genreForm">thriller</span>
-										<span class="genreForm">western</span>
-								</div>
-								
-							</div>
-							<div class="col">
-								<div class="titleFooter">LATEST MOVIES</div>
-								<br>
-								<div>
-									<div class="row"> 
-										<div class="col-4">
-												<img src="./img/spyKids.jpeg" alt="Spy Kids" class="imageFooter">
-										</div>
-										<div class="col-8">
-											Spy Kids
-										</div>
-
-										<div class="col-4">
-												<img src="./img/spyKids2.jpeg" alt="Spy Kids 2" class="imageFooter">
-										</div>
-										<div class="col-8">
-												Spy Kids 2
-										</div>
-
-										<div class="col-4">
-												<img src="./img/spyKids3D.jpeg" alt="Spy Kids 3D" class="imageFooter">
-										</div>
-										<div class="col-8">
-												Spy Kids 3D
-										</div>
-
-										<div class="col-4">
-												<img src="./img/spyKids4D.jpeg" alt="Spy Kids 4D" class="imageFooter">
-										</div>
-										<div class="col-8">
-												Spy Kids 4D
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							<div class="col">
-								<div class="titleFooter">ALLEZCINE!</div>
-								<br>
-								<div>
-									<dir class="row">
-										<div class="col-4"><img src="./img/ironMan.jpeg" alt="" class="imageFooter"></div>
-										<div class="col-4"><img src="./img/ironMan2.jpeg" alt="" class="imageFooter"></div>
-										<div class="col-4"><img src="./img/ironMan3.jpeg" alt="" class="imageFooter"></div>
-										<div class="col-4"><img src="./img/jurassicPark.jpeg" alt="" class="imageFooter"></div>
-										<div class="col-4"><img src="./img/jurassicPark2.jpg" alt="" class="imageFooter"></div>
-										<div class="col-4"><img src="./img/peter-elliott.jpeg" alt="" class="imageFooter"></div>
-									</dir>
-								</div>
-								
 							</div>
 						</div>
-						<br><div class="titleFooter"></div><br><br><div class="titleFooter"></div><br>
-						<div class="text-center">
-							<div>
-								CONNECT US
-							</div>
-							<div>
-								<a href=""><i class="fa fa-facebook" ></i></a>
-								<a href=""><i class="fa fa-twitter"></i></a>
-								<a href=""><i class="fa fa-linkedin"></i></a>
-								<a href=""><i class="fa fa-youtube"></i></a>
-								<a href=""><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</section>
+			<section id="Footer">
+				<div >
+					<form action="" class="text-center gray">
+						<label for="">SUBSCRIBE TO US</label>
+						<br>
+						<input type="text">
+						<button>SUBSCRIBE</button>
+					</form>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col">
+						<div class="titleFooter">
+							RELEASE
+						</div>
+						<br>
+						<div>
+							<p>
+								2018
+							</p>
+							<p>
+								2017
+							</p>
+							<p>
+								2016
+							</p>
+							<p>
+								2015
+							</p>
+							<p>
+								2014
+							</p>
+							<p>
+								2013
+							</p>
+							<p>
+								2012
+							</p>
+							<p>
+								2011
+							</p>
+						</div>
+					</div>
+					<br>
+					<div class="col">
+						<div class="titleFooter">
+							MOVIES
+						</div>
+						<br>
+						<div>
+							<p>
+								action
+							</p>
+							<p>
+								aventure
+							</p>
+							<p>
+								amour
+							</p>
+							<p>
+								comedie
+							</p>
+							<p>
+								drame
+							</p>
+							<p>
+								fantasy
+							</p>
+							<p>
+								guerre
+							</p>
+							<p>
+								sci-fi
+							</p>
+							<p>
+								thriller
+							</p>
+							<p>
+								western
+							</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="titleFooter">
+							REVIEW MOVIES
+						</div>
+						<div id="revmov">
+							<span class="genreForm">action</span>
+							<span class="genreForm">aventure</span>
+							<span class="genreForm">amour</span>
+							<span class="genreForm">comedie</span>
+							<span class="genreForm">drame</span>
+							<span class="genreForm">fantasy</span>
+							<span class="genreForm">guerre</span>
+							<span class="genreForm">sci-fi</span>
+							<span class="genreForm">thriller</span>
+							<span class="genreForm">western</span>
+						</div>
+					</div>
+					<div class="col">
+						<div class="titleFooter">
+							LATEST MOVIES
+						</div>
+						<br>
+						<div>
+							<div class="row gray">
+								<div class="col-4">
+									<img src="./img/spyKids.jpeg" alt="Spy Kids" class="imageFooter">
+								</div>
+								<div class="col-8">
+									Spy Kids
+								</div>
+								<div class="col-4">
+									<img src="./img/spyKids2.jpeg" alt="Spy Kids 2" class="imageFooter">
+								</div>
+								<div class="col-8">
+									Spy Kids 2
+								</div>
+								<div class="col-4">
+									<img src="./img/spyKids3D.jpeg" alt="Spy Kids 3D" class="imageFooter">
+								</div>
+								<div class="col-8">
+									Spy Kids 3D
+								</div>
+								<div class="col-4">
+									<img src="./img/spyKids4D.jpeg" alt="Spy Kids 4D" class="imageFooter">
+								</div>
+								<div class="col-8">
+									Spy Kids 4D
+								</div>
 							</div>
 						</div>
-				</section>
-				<footer>
-					<button onclick="topFunction()" id="myBtn" title="Go to top">Haut</button>
-				</footer>
-				<div id="Login" class="modal">
-					<form class="modal-content animate" action="">
-						<span onclick="document.getElementById('Login').style.display='none'"class="close">&times;</span>
+					</div>
+					<div class="col">
+						<div class="titleFooter">
+							ALLEZCINE!
+						</div>
+						<br>
+						<div>
+							<dir class="row">
+								<div class="col-4">
+									<img src="./img/ironMan.jpeg" alt="" class="imageFooter">
+								</div>
+								<div class="col-4">
+									<img src="./img/ironMan2.jpeg" alt="" class="imageFooter">
+								</div>
+								<div class="col-4">
+									<img src="./img/ironMan3.jpeg" alt="" class="imageFooter">
+								</div>
+								<div class="col-4">
+									<img src="./img/jurassicPark.jpeg" alt="" class="imageFooter">
+								</div>
+								<div class="col-4">
+									<img src="./img/jurassicPark2.jpg" alt="" class="imageFooter">
+								</div>
+								<div class="col-4">
+									<img src="./img/peter-elliott.jpeg" alt="" class="imageFooter">
+								</div>
+							</dir>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="titleFooter"></div>
+				<br>
+				<br>
+				<div class="titleFooter"></div>
+				<br>
+				<div class="text-center">
+					<div class="gray">
+						CONNECT US
+					</div>
+					<div>
+						<a href=""><i class="fa fa-facebook" ></i></a>
+						<a href=""><i class="fa fa-twitter"></i></a>
+						<a href=""><i class="fa fa-linkedin"></i></a>
+						<a href=""><i class="fa fa-youtube"></i></a>
+						<a href=""><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<button onclick="topFunction()" id="myBtn" title="Go to top">Haut</button>
+			</footer>
+			<div id="Login" class="modal">
+				<form class="modal-content animate" action="">
+					<span onclick="document.getElementById('Login').style.display='none'"class="close">&times;</span>
+					<div class="container">
+						<label for="Identifiant"><b>Identifiant</b></label>
+						<input type="text" id="Identifiant" class="champ inputToP" required>
+						<label for="Password"><b>Password</b></label>
+						<input type="password" id="Password" class="champ inputToP" required>
+						<button type="submit" class="button-F2">Login</button>
+						<button type="button" onclick="change()"class="button-F2">Créer un compte</button>
+						<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+						<button type="button" onclick="document.getElementById('Login').style.display='none'" class="cancelbtn">Cancel</button>
+						<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+			</div>
+			<div id="Register" class="modal">
+				<form class="modal-content animate" action="">
+					<span onclick="document.getElementById('Register').style.display='none'"class="close">&times;</span>
+					<div class="container">
+						<label for="name"><b>Nom</b></label>
+						<input type="text" id="name" class="champ inputToP" required>
+						<label for="mail">E-mail</label>
+						<input type="text" id="mail" class="champ inputToP" required>
+						<label for="psw"><b>Password</b></label>
+						<input type="password" id="psw" class="champ inputToP" required>
+						<label for="confirmation">Confirmation</label>
+						<input type="password" id="confirmation" class="champ inputToP" required>
+						<label>
+							<input type="checkbox" value="" name="conditions" autocomplete="off">
+							 J'accepte les
+							<a href="" target="_blank">conditions d'utilisations</a>
+						</label>
+						<br>
+						<button type="submit"id="envoi"class="button-F2">Register</button>
+					</div>
+					<div class="container" style="background-color:#f1f1f1">
+						<button type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">Cancel</button>
+					</div>
+				</form>
+			</div>
+			<div id="modale" class="modal">
+				<div id="AvisCookies">
+					<form class="modal-content cookies animate">
+						<span onclick="fermerModal()" class="close">&times;</span>
 						<div class="container">
-							<label for="Identifiant"><b>Identifiant</b></label>
-							<input type="text" id="Identifiant" class="champ inputToP" required>
-							<label for="Password"><b>Password</b></label>
-							<input type="password" id="Password" class="champ inputToP" required>
-							<button type="submit" class="button-F2">Login</button>
-							<button type="button" onclick="change()"class="button-F2">Créer un compte</button>
-							<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
-						</div>
-						<div class="container" style="background-color:#f1f1f1">
-							<button type="button" onclick="document.getElementById('Login').style.display='none'" class="cancelbtn">Cancel</button>
-							<span class="psw">Forgot <a href="#">password?</a></span>
+							Ce site utilise des cookies et vous donne le contrôle sur ce que vous souhaitez activer
+							<a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi">plus info</a>
 						</div>
 					</form>
 				</div>
-				<div id="Register" class="modal">
-					<form class="modal-content animate" action="">
-						<span onclick="document.getElementById('Register').style.display='none'"class="close">&times;</span>
+				<div id="film1">
+					<div class="modal-content animate">
+						<div class="modal-header">
+							<h4 class="modal-title">Lego Batman, le film</h4>
+							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+						</div>
 						<div class="container">
-							<label for="name"><b>Nom</b></label>
-							<input type="text" id="name" class="champ inputToP" required>
-							<label for="mail">E-mail</label>
-							<input type="text" id="mail" class="champ inputToP" required>
-							<label for="psw"><b>Password</b></label>
-							<input type="password" id="psw" class="champ inputToP" required>
-							<label for="confirmation">Confirmation</label>
-							<input type="password" id="confirmation" class="champ inputToP" required>
-							<label>
-								<input type="checkbox" value="" name="conditions" autocomplete="off">
-								 J'accepte les
-								<a href="" target="_blank">conditions d'utilisations</a>
-							</label>
-							<br>
-							<button type="submit"id="envoi"class="button-F2">Register</button>
+							<iframe width="100%" height="200" src="https://www.youtube.com/embed/hd6dqh9BjHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<p>
+								De grands changements s'en viennent à Gotham, alors s'il tient vraiment à libérer la ville de l'emprise impitoyable du Joker, Batman devra sans doute laisser tomber son statut de justicier solitaire, s'efforcer de travailler en équipe, et peut-être, seulement peut-être, apprendre à se détendre.
+							</p>
+							<p>
+								<b>Date de sortie</b>
+								 : 8 février 2017 (Belgique)
+							</p>
+							<p>
+								<b>Réalisateur</b>
+								 : Chris McKay
+							</p>
+							<p>
+								<b>Titre original</b>
+								 : The Lego Batman Movie
+							</p>
+							<p>
+								<b>Box-office</b>
+								 : 312 millions USD
+							</p>
+							<p>
+								<b>Budget</b>
+								 : 80 millions USD
+							</p>
 						</div>
-						<div class="container" style="background-color:#f1f1f1">
-							<button type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">Cancel</button>
-						</div>
-					</form>
-				</div>
-				<div id="modale" class="modal">
-					<div id="AvisCookies">
-						<form class="modal-content cookies animate">
-							<span onclick="fermerModal()" class="close">&times;</span>
-							<div class="container">
-								Ce site utilise des cookies et vous donne le contrôle sur ce que vous souhaitez activer
-								<a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi">plus info</a>
-							</div>
-						</form>
-					</div>
-					<div id="film1">
-						<div class="modal-content animate">
-								<div class="modal-header">
-										<h4 class="modal-title">Lego Batman, le film</h4>
-										<button type="button" class="close" onclick="fermerModal()">&times;</button>
-								</div>
-								<div class="container">
-										<iframe width="100%" height="200" src="https://www.youtube.com/embed/hd6dqh9BjHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-										<p>De grands changements s'en viennent à Gotham, alors s'il tient vraiment à libérer la ville de l'emprise impitoyable du Joker, Batman devra sans doute laisser tomber son statut de justicier solitaire, s'efforcer de travailler en équipe, et peut-être, seulement peut-être, apprendre à se détendre.
-										</p>
-										<p><b>Date de sortie</b> : 8 février 2017 (Belgique)</p>
-										<p><b>Réalisateur</b> : Chris McKay</p>
-										<p><b>Titre original</b> : The Lego Batman Movie</p>
-										<p><b>Box-office</b> : 312 millions USD</p>
-										<p><b>Budget</b> : 80 millions USD</p>
-								</div>
-
-						</div>
-					</div>
-					<div id="film2">
-							<div class="modal-content animate">
-
-									<div class="modal-header">
-											<h4 class="modal-title">Intouchables</h4>
-											<button type="button" class="close" onclick="fermerModal()">&times;</button>
-									</div>
-									<div class="container">
-											<iframe width="100%" height="200" src="https://www.youtube.com/embed/cXu2MhWYUuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-											<p>Tout les oppose et il était peu probable qu'ils se rencontrent un jour, et pourtant. Philippe, un riche aristocrate devenu tétraplégique après un accident de parapente va engager Driss, un jeune homme d'origine sénégalaise tout droit sorti de prison, comme auxiliaire de vie à domicile. Pourquoi lui ? Tout simplement parce qu'il ne regarde pas Philippe avec le même regard de pitié que les autres candidats.</p>
-											<p><b>Date de sortie</b> : 2 novembre 2011 (Belgique)</p>
-											<p><b>Réalisateurs</b> : Olivier Nakache, Éric Toledano</p>
-											<p><b>Titre musical associé</b> : Fly</p>
-											<p><b>Bande originale</b> : Ludovico Einaudi</p>
-									</div>
-
-							</div>
-					</div>
-					<div id="film3">
-							<div class="modal-content animate">
-								<div class="modal-header">
-									<h4 class="modal-title">The Fall</h4>
-									<button type="button" class="close" onclick="fermerModal()">&times;</button>
-								</div>
-								<div class="container">
-										<iframe width="100%" height="200" src="https://www.youtube.com/embed/qNGqTltN-7M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-										<p>The Fall est un film américano-britannico-indien réalisé par Tarsem Singh, sorti en 2006, Inspiré du scénario écrit par Valeri Petrov pour le film bulgare Yo Ho Ho réalisé par Zako Heskija en 1981, le film est ... Wikipédia</p>
-										<p><b>Date de sortie</b> : 11 mars 2009 (Belgique)</p>
-										<p><b>Réalisateur</b> : Tarsem Singh</p>
-										<p><b>Cinématographie</b> : Colin Watkinson</p>
-										<p><b>Distribution</b> : Lee Pace, Catinca Untaru, Justine Waddell, Leo Bill, PLUS</p>
-										<p><b>Décors</b> : Cynthia Sleiter, Richard Pugliese</p>
-
-								</div>
-
-							</div>
-					</div>
-					<div id="film4">
-							<div class="modal-content animate">
-
-									<div class="modal-header">
-											<h4 class="modal-title">Shutter Island</h4>
-											<button type="button" class="close" onclick="fermerModal()">&times;</button>
-									</div>
-									<div class="container">
-											<iframe width="100%" height="200" src="https://www.youtube.com/embed/lhBTlYQcBC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-											<p>L'invraisemblable évasion d'une meurtrière rusée amène le marshal Teddy Daniels et son nouveau partenaire à l'hôpital Ashecliffe, un asile psychiatrique situé sur une île lointaine et balayée par les vents. Il apparaît que la femme a disparu d'une chambre fermée à clef et il y a des indices d'actes … PLUS</p>
-											<p><b>Date de sortie</b> : 24 février 2010 (Belgique)</p>
-											<p><b>Réalisateur</b> : Martin Scorsese</p>
-											<p><b>D'après l'œuvre originale de</b> : Dennis Lehane</p>
-											<p><b>Scénario</b> : Laeta Kalogridis</p>
-											<p><b>Récompenses</b> : Teen Choice Award du meilleur acteur dans un thriller/film d'horreur</p>
-									</div>
-
-							</div>
-					</div>
-					<div id="film5">
-							<div class="modal-content animate">
-								<div class="modal-header">
-									<h4 class="modal-title">swiss army man</h4>
-									<button type="button" class="close" onclick="fermerModal()">&times;</button>
-								</div>
-								<div class="container">
-										<iframe width="100%" height="200" src="https://www.youtube.com/embed/C6NzNsd0l_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-										<p>Hank est perdu sur une île déserte. Désespéré, il est sur le point de mettre fin à ses jours lorsqu'il aperçoit un cadavre échoué sur la plage. Plus qu'un simple macchabée, celui-ci semble encore animé, en tout cas juste assez pour avoir d'impressionnantes flatulences capables de le propulser dans les airs et des érections à faire pâlir bon nombre de vivants.</p>
-										<p><b>Première sortie</b> : 30 juin 2016 (Russie)</p>
-										<p><b>Réalisateurs</b> : Dan Kwan, Daniel Scheinert</p>
-										<p><b>Box-office</b> : 5,1 millions USD</p>
-										<p><b>Nominations</b> : Independent Spirit Award du meilleur premier film</p>
-
-								</div>
-
-							</div>
 					</div>
 				</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<script type="text/javascript" src="./cookies/cookies.js"></script>
-				<script src="cookies.js">
-				</script>
-				<script src="script.js">
-				</script>
-				<script src="tableau-tri.js">
-					</script>
-					<script src="modal.js"></script>
-					<script src="myShop.js"></script>
-				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
-				<script type="text/javascript">
+				<div id="film2">
+					<div class="modal-content animate">
+						<div class="modal-header">
+							<h4 class="modal-title">Intouchables</h4>
+							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+						</div>
+						<div class="container">
+							<iframe width="100%" height="200" src="https://www.youtube.com/embed/cXu2MhWYUuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<p>
+								Tout les oppose et il était peu probable qu'ils se rencontrent un jour, et pourtant. Philippe, un riche aristocrate devenu tétraplégique après un accident de parapente va engager Driss, un jeune homme d'origine sénégalaise tout droit sorti de prison, comme auxiliaire de vie à domicile. Pourquoi lui ? Tout simplement parce qu'il ne regarde pas Philippe avec le même regard de pitié que les autres candidats.
+							</p>
+							<p>
+								<b>Date de sortie</b>
+								 : 2 novembre 2011 (Belgique)
+							</p>
+							<p>
+								<b>Réalisateurs</b>
+								 : Olivier Nakache, Éric Toledano
+							</p>
+							<p>
+								<b>Titre musical associé</b>
+								 : Fly
+							</p>
+							<p>
+								<b>Bande originale</b>
+								 : Ludovico Einaudi
+							</p>
+						</div>
+					</div>
+				</div>
+				<div id="film3">
+					<div class="modal-content animate">
+						<div class="modal-header">
+							<h4 class="modal-title">The Fall</h4>
+							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+						</div>
+						<div class="container">
+							<iframe width="100%" height="200" src="https://www.youtube.com/embed/qNGqTltN-7M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<p>
+								The Fall est un film américano-britannico-indien réalisé par Tarsem Singh, sorti en 2006, Inspiré du scénario écrit par Valeri Petrov pour le film bulgare Yo Ho Ho réalisé par Zako Heskija en 1981, le film est ... Wikipédia
+							</p>
+							<p>
+								<b>Date de sortie</b>
+								 : 11 mars 2009 (Belgique)
+							</p>
+							<p>
+								<b>Réalisateur</b>
+								 : Tarsem Singh
+							</p>
+							<p>
+								<b>Cinématographie</b>
+								 : Colin Watkinson
+							</p>
+							<p>
+								<b>Distribution</b>
+								 : Lee Pace, Catinca Untaru, Justine Waddell, Leo Bill, PLUS
+							</p>
+							<p>
+								<b>Décors</b>
+								 : Cynthia Sleiter, Richard Pugliese
+							</p>
+						</div>
+					</div>
+				</div>
+				<div id="film4">
+					<div class="modal-content animate">
+						<div class="modal-header">
+							<h4 class="modal-title">Shutter Island</h4>
+							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+						</div>
+						<div class="container">
+							<iframe width="100%" height="200" src="https://www.youtube.com/embed/lhBTlYQcBC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<p>
+								L'invraisemblable évasion d'une meurtrière rusée amène le marshal Teddy Daniels et son nouveau partenaire à l'hôpital Ashecliffe, un asile psychiatrique situé sur une île lointaine et balayée par les vents. Il apparaît que la femme a disparu d'une chambre fermée à clef et il y a des indices d'actes … PLUS
+							</p>
+							<p>
+								<b>Date de sortie</b>
+								 : 24 février 2010 (Belgique)
+							</p>
+							<p>
+								<b>Réalisateur</b>
+								 : Martin Scorsese
+							</p>
+							<p>
+								<b>D'après l'œuvre originale de</b>
+								 : Dennis Lehane
+							</p>
+							<p>
+								<b>Scénario</b>
+								 : Laeta Kalogridis
+							</p>
+							<p>
+								<b>Récompenses</b>
+								 : Teen Choice Award du meilleur acteur dans un thriller/film d'horreur
+							</p>
+						</div>
+					</div>
+				</div>
+				<div id="film5">
+					<div class="modal-content animate">
+						<div class="modal-header">
+							<h4 class="modal-title">swiss army man</h4>
+							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+						</div>
+						<div class="container">
+							<iframe width="100%" height="200" src="https://www.youtube.com/embed/C6NzNsd0l_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<p>
+								Hank est perdu sur une île déserte. Désespéré, il est sur le point de mettre fin à ses jours lorsqu'il aperçoit un cadavre échoué sur la plage. Plus qu'un simple macchabée, celui-ci semble encore animé, en tout cas juste assez pour avoir d'impressionnantes flatulences capables de le propulser dans les airs et des érections à faire pâlir bon nombre de vivants.
+							</p>
+							<p>
+								<b>Première sortie</b>
+								 : 30 juin 2016 (Russie)
+							</p>
+							<p>
+								<b>Réalisateurs</b>
+								 : Dan Kwan, Daniel Scheinert
+							</p>
+							<p>
+								<b>Box-office</b>
+								 : 5,1 millions USD
+							</p>
+							<p>
+								<b>Nominations</b>
+								 : Independent Spirit Award du meilleur premier film
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="./cookies/cookies.js"></script>
+			<script src="cookies.js">
+			</script>
+			<script src="script.js">
+			</script>
+			<script src="tableau-tri.js">
+			</script>
+			<script src="modal.js"></script>
+			<script src="myShop.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+			<script type="text/javascript">
 				$('#myModal').on('shown.bs.modal', function () {
 					$('#myInput').trigger('focus')
-				})
-				</script>
-      </body>
-		</html>
+				});
+			</script>
+		</body>
+	</html>

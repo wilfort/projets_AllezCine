@@ -204,9 +204,14 @@ animation: animatezoom 0.6s}
 	{
 	transform: scale(1)}
 }
-#reseauSociaux{position: fixed;
-top:150px;
-z-index: 15;}
+#reseauSociaux{
+	position: fixed;
+	top:150px;
+	z-index: 15;
+}
+.sociaux span {
+	color: white;
+}
 .sociaux{padding-bottom: 10px;}
 #twitter {
 	background-color: #09a8ba;
@@ -249,7 +254,7 @@ z-index: 15;}
     display:none;
     width: 0px;
     padding: 1px 0px;
-    
+
   }
   .bpnS:active span, .bpnS:focus span{
     display: inherit;
@@ -425,7 +430,7 @@ margin-right: 10px;}
 }
 #formulaire [class*="col-"]{
 	padding:5px;
-	
+
 }
 #menu{position: absolute;
     top: 10px;
@@ -437,11 +442,11 @@ margin-right: 10px;}
         }
 #navbarN a{
     color: #FFF;
-    font-size: 14px;
+    font-size: 20px;
 }
 #navbarP a{
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
 }
 #navbarP .dropdown-menu{background-color: #f44336;}
 .input-group{
@@ -525,9 +530,12 @@ margin-right: 10px;}
 	padding: 9px 20px;
 	border-radius: 25px;
 }
-#Footer{background-color: rgb(22, 10, 10);
+#Footer{background-color: black;
 margin-top: -400px;
 padding-top: 410px}
+#Footer p{
+	color: gray;
+}
 .titleFooter{
 	width: 100%;
 	color: #fff;
@@ -545,3 +553,7 @@ padding-top: 410px}
 .imageFooter{width: 100%;
 height: auto;}
 #Footer .row {padding: 0px;}
+
+.gray {
+	color : gray;
+}
