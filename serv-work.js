@@ -1,4 +1,4 @@
-let cache = 'SyndLocat';
+var cache = 'SyndLocat';
 var dataCacheName = 'Syn-d-Loc';
 var urlsToCache = [
   '.',
