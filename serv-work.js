@@ -1,10 +1,10 @@
 var cache = 'SyndLocat';
 var dataCacheName = 'Syn-d-Loc';
 var urlsToCache = [
-  '.',
-  './index.html',
-  './assent/style.css',
-  './serv-work.js'
+  './projets_AllezCine/',
+  './projets_AllezCine/index.html',
+  './projets_AllezCine/assent/style.css',
+  './projets_AllezCine/serv-work.js'
 ];
 
 self.addEventListener('install', function(e) {
