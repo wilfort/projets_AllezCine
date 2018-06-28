@@ -1,15 +1,21 @@
 var cacheName = 'weatherPWA-step-6-1';
-var filesToCache = [];
+var dataCacheName = 'Syn-d-Loc';
+var urlsToCache = [
+  '/projets_AllezCine/',
+  '/projets_AllezCine/index.html',
+  '/projets_AllezCine/assent/style.css',
+  '/projets_AllezCine/serv-work.js'
+];
 
 self.addEventListener('install', function(e) {
-  console.log('[ServiceWorker] Install');
-  e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      console.log('[ServiceWorker] Caching app shell');
-      return cache.addAll(filesToCache);
-    })
-  );
-});
+    console.log('[ServiceWorker] Install');
+    e.waitUntil(
+      caches.open(cacheName).then(function(cache) {
+        console.log('[ServiceWorker] Caching app shell');
+        return cache.addAll(urlsToCache);
+      })
+    );
+  });
 
 // self.addEventListener('activate', function(e) {
 //     console.log('[ServiceWorker] Activate');
