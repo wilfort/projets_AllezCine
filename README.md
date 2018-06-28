@@ -56,6 +56,3 @@ Terminé et rendu.
 ## Lieux :
 Be-Central, bureaux de BeCode.org.  
 Cantersteen 12, 1000 Bruxelles (Gare de Bruxelles-Central).
-
-### Courte Description :
-One-pager responsive d'un site de location et vente de films (fictif), réalisé par groupe de deux en 2 semaines à l'aide de Bootstrap. Exercice de la formation Web Dev BeCode.org à Bruxelles. Fin juin 2018. 
