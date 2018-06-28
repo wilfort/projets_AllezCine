@@ -1,4 +1,4 @@
-let cachenom = 'SyndLocat';
+var cacheAllo
 var dataCacheName = 'Syn-d-Loc';
 var urlsToCache = [
   '.',
@@ -10,7 +10,7 @@ var urlsToCache = [
 self.addEventListener('install', function(e) {
     console.log('[ServiceWorker] Install');
     e.waitUntil(
-      caches.open(cachenom).then(function(cache) {
+      caches.open(cacheAllo).then(function(cache) {
         console.log('[ServiceWorker] Caching app shell');
         return cache.addAll(urlsToCache);
       })
