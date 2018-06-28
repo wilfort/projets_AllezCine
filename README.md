@@ -1,7 +1,7 @@
 # projets_AllezCine
 
 # Objectif et situation :
-Projet de la formation BeCode.org (2ème mois sur 6) ayant pour but de respecter un design donné, tester les compétences en Git, HTML, JavaScript (+ JQuery), et CSS (utilisation du framework Bootstrap) des apprenants acquises lors des premières semaines, ainsi que la capacité à gérer et résoudre les problèmes rencontrés en groupe. Premier exercice de groupe qui se déroule sur plusieurs jours d'où l'inititation à la méthode kanban (onglet "Projects" de GitHub).   
+Projet de la formation BeCode.org (2ème mois sur 6) ayant pour but de tester les compétences des apprenants acquises lors des premières semaines ; respecter un design donné, Git, HTML, JavaScript (+ JQuery), et CSS (utilisation du framework Bootstrap), ainsi que la capacité à gérer et résoudre les problèmes rencontrés en groupe. Premier exercice de groupe qui se déroule sur plusieurs jours d'où l'inititation à la méthode kanban (onglet "Projects" de GitHub).   
 
 Apprenants : *Stéphane Wilfort* et *Nathan Houtain*.
 
@@ -36,7 +36,7 @@ Eléments donnés à faire avec technologie utilisée / concepteur :
  (BS / Stéphane)
  * **Newsletter**                                                               
  (Html-CSS / Nathan) 
- * **ReadMe** 
+ * **ReadMe**  
  (Markdown / Nathan)
  * **Service Worker, PWA, test Lighthouse**                                     
  (Stéphane - Nathan) 
