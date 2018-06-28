@@ -1,7 +1,7 @@
 # Projet AllezCiné
 
 # Objectif et situation :
-Projet de la formation BeCode.org (2ème mois sur 6) ayant pour but de tester les compétences des apprenants acquises lors des premières semaines ; respecter un design donné, **Git**, **HTML**, **JavaScript** (+ JQuery), et **CSS** (utilisation du framework **Bootstrap**), ainsi que la capacité à gérer et résoudre les problèmes rencontrés en groupe. Premier exercice de groupe qui se déroule sur plusieurs jours d'où l'inititation à la **méthode kanban** (onglet "Projects" de GitHub).   
+Projet de la formation BeCode.org (2ème mois sur 6) ayant pour but de tester et améliorer les compétences des apprenants acquises lors des premières semaines ; respecter un design donné, **Git**, **HTML**, **JavaScript** (+ JQuery), et **CSS** (utilisation du framework **Bootstrap**), ainsi que la capacité à gérer et résoudre les problèmes rencontrés en groupe. Premier exercice de groupe qui se déroule sur plusieurs jours d'où l'inititation à la **méthode kanban** (onglet "Projects" de GitHub).   
 
 Apprenants : *Stéphane Wilfort* et *Nathan Houtain*.
 
