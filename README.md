@@ -58,4 +58,4 @@ Be-Central, bureaux de BeCode.org.
 Cantersteen 12, 1000 Bruxelles (Gare de Bruxelles-Central).
 
 ### Courte Description :
-Site one-page responsive d'un site de location et vente de films (fictif), réalisé par groupe de deux en 2 semaines à l'aide de Bootstrap. Exercice réalisé lors de la formation Web Dev BeCode.org à Bruxelles. Fin juin 2018. 
+One-pager responsive d'un site de location et vente de films (fictif), réalisé par groupe de deux en 2 semaines à l'aide de Bootstrap. Exercice réalisé lors de la formation Web Dev BeCode.org à Bruxelles. Fin juin 2018. 
