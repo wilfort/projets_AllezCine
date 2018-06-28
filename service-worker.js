@@ -1,8 +1,8 @@
 var cacheName = 'weatherPWA-step-6-1';
 var dataCacheName = 'Syn-d-Loc';
 var urlsToCache = [
-  './projets_AllezCine/index.html',
-  './projets_AllezCine/style.css'
+  '/projets_AllezCine/index.html',
+  '/projets_AllezCine/style.css'
 ];
 
 self.addEventListener('install', function(e) {
