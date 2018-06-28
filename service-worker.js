@@ -2,7 +2,23 @@ var cacheName = 'weatherPWA-step-6-1';
 var dataCacheName = 'Syn-d-Loc';
 var urlsToCache = [
   '/projets_AllezCine/index.html',
-  '/projets_AllezCine/style.css'
+  '/projets_AllezCine/newsletter.html',
+  '/projets_AllezCine/style.css',
+  '/projets_AllezCine/tableau-tri.css',
+  '/projets_AllezCine/myShop.css'
+//   ,
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/',
+//   '/projets_AllezCine/'
 ];
 
 self.addEventListener('install', function(e) {
