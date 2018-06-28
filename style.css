@@ -65,7 +65,7 @@ body {
 
 .button-F2 {
 	background-color: rgb(37, 6, 46);
-	margin: 8px 8px;
+	margin: 8px;
 	border-radius: 10%;
 }
 
@@ -152,7 +152,10 @@ span.psw {
 	width: 40%;
 	/* Could be more or less, depending on screen size */
 }
-
+#formulaire{
+	margin: 5% auto 15% auto;
+	width: 80%;
+}
 .cookies {
 	background-color: #fefefe;
 	margin: 5% auto 15% auto;
@@ -420,6 +423,10 @@ margin-right: 10px;}
 [class*="col-"]{
     padding:0px 5px;
 }
+#formulaire [class*="col-"]{
+	padding:5px;
+	
+}
 #menu{position: absolute;
     top: 10px;
     left: 30px;
@@ -502,3 +509,39 @@ margin-right: 10px;}
 .carousel-item img{
 	padding: 0px;
 }
+#formulaire input,#formulaire textarea{
+	width: 100%;
+	padding: 9px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	 border-radius: 5px;
+}
+#formulaire button {
+	background-color: #f00;
+	color: #fff;
+	margin: 8px;
+	padding: 9px 20px;
+	border-radius: 25px;
+}
+#Footer{background-color: rgb(22, 10, 10);
+margin-top: -400px;
+padding-top: 410px}
+.titleFooter{
+	width: 100%;
+	color: #fff;
+	border-bottom: 3px solid #333;
+}
+.genreForm{
+	padding: 5px ;
+	margin:  5px 2.5px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: #f00;
+	color: #fff;
+}
+#revmov{padding-top:20px}
+.imageFooter{width: 100%;
+height: auto;}
+#Footer .row {padding: 0px;}
