@@ -1,33 +1,33 @@
 {
-    "short_name": "Restaurants",
-    "name": "Restaurants",
+    "short_name": "Allocine",
+    "name": "AlloCine!",
     "icons": [{
-      "src": "../img/icons-192.png",
+      "src": "icon128.png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "./img/icons-192.png",
+      "src": "icon144.png",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-        "src": "./img/icons-192.png",
-        "type": "image/png",
+        "src": "icon152.jpeg",
+        "type": "image/jpeg",
         "sizes": "152x152"
       },
       {
-        "src": "./img/icons-192.png",
+        "src": "icon192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "./img/icons-512.png",
+        "src": "icon256.png",
         "type": "image/png",
         "sizes": "256x256"
       },
       {
-        "src": "./img/icons-512.png",
+        "src": "icon512.png",
         "type": "image/png",                                             
         "sizes": "512x512"
       }
