@@ -557,3 +557,10 @@ height: auto;}
 .gray {
 	color : gray;
 }
+
+#link-sociaux{
+	color: white;
+	border: 1px solid white;
+	padding: 5px;
+	margin: 5px;
+}
