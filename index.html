@@ -218,7 +218,7 @@
 					</div>
 				</div>
 			</section>
-			<section id=FeaturedMovies>
+			<section id="FeaturedMovies">
 				<div class="title">
 					<h5>
 						<b>FEATURED MOVIES</b>
@@ -1076,22 +1076,22 @@
 							<form action="">
 								<div  class="row">
 									<div class="col-6">
-										<input type="text" value="FIRST NAME">
+										<input type="text" id="FIRST-NAME" value="FIRST NAME">
 									</div>
 									<div class="col-6">
-										<input type="text"value="LAST NAME">
+										<input type="text" id="LAST-NAME" value="LAST NAME">
 									</div>
 									<div class="col-6">
-										<input type="text"value="EMAIL">
+										<input type="text" id="EMAIL" value="EMAIL">
 									</div>
 									<div class="col-6">
-										<input type="text"value="SUJECT">
+										<input type="text" id="SUJECT" value="SUJECT">
 									</div>
 									<div class="col-12">
-										<textarea name="" id="" cols="30" rows="10"value="YOUR MESSAGE">YOUR MESSAGE</textarea>
+										<textarea name="" id="YOUR-MESSAGE" cols="30" rows="10"value="YOUR MESSAGE">YOUR MESSAGE</textarea>
 									</div>
 								</div>
-								<button name="Envoi message">SEND MESSAGE</button>
+								<button name="Envoi message" id="SEND-MESSAGE" onclick="message()">SEND MESSAGE</button>
 							</form>
 						</div>
 						<div div class="col-6">
@@ -1278,11 +1278,11 @@
 						CONNECT US
 					</div>
 					<div>
-						<a href=""rel="noreferrer"><i class="fa fa-facebook" ></i></a>
-						<a href=""rel="noreferrer"><i class="fa fa-twitter"></i></a>
-						<a href=""rel="noreferrer"><i class="fa fa-linkedin"></i></a>
-						<a href=""rel="noreferrer"><i class="fa fa-youtube"></i></a>
-						<a href=""rel="noreferrer"><i class="fa fa-google-plus"></i></a>
+						<a href="www.facebook.com/‎"rel="noreferrer"><i class="fa fa-facebook" ></i></a>
+						<a href="https://twitter.com/"rel="noreferrer"><i class="fa fa-twitter"></i></a>
+						<a href="https://fr.linkedin.com/"rel="noreferrer"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.youtube.com/?hl=FR"rel="noreferrer"><i class="fa fa-youtube"></i></a>
+						<a href="https://plus.google.com/?hl=fr"rel="noreferrer"><i class="fa fa-google-plus"></i></a>
 					</div>
 				</div>
 			</section>
@@ -1522,6 +1522,10 @@
 				$('#myModal').on('shown.bs.modal', function () {
 					$('#myInput').trigger('focus')
 				});
+				function message(){
+					var message ="\nVotre prénom : "+ document.getElementById('FIRST-NAME').value +"\n\nVotre Nom : "+ document.getElementById('LAST-NAME').value+"\n\nVotre Email : "+ document.getElementById('EMAIL').value+"\n\nVotre Suject : "+ document.getElementById('SUJECT').value+"\n\nVotre Message : "+ document.getElementById('YOUR-MESSAGE').value;
+					alert(message);
+				}
 			</script>
 		</body>
 	</html>
