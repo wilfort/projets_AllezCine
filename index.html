@@ -61,7 +61,7 @@
 							<div class="input-group">
 								<input type="text" class="form-control inputTS"  placeholder="Search">
 								<div class="input-group-btn">
-									<button class="btn btn-default bpmef" type="submit"><i class="fa fa-search"></i></button>
+									<button name="recherche" class="btn btn-default bpmef" type="submit"><i class="fa fa-search"></i></button>
 								</div>
 							</div>
 						</div>
@@ -95,31 +95,31 @@
 				<div id="btnForm">
 					<i class="fa fa-phone" aria-hidden="true"></i>
 					(+000) 009 455 4088
-					<button class="button-F" onclick="document.getElementById('Login').style.display='block'" style="width:auto;">Login</button>
-					<button class="button-F" onclick="document.getElementById('Register').style.display='block'" style="width:auto;">Register</button>
+					<button name="ouvrir modal login" class="button-F" onclick="document.getElementById('Login').style.display='block'" style="width:auto;">Login</button>
+					<button name="ouvrir modal register" class="button-F" onclick="document.getElementById('Register').style.display='block'" style="width:auto;">Register</button>
 				</div>
 			</header>
 			<section id="reseauSociaux">
 				<div class="sociaux">
-					<button class="bpnS"id="twitter">
+					<button name="reseauSociaux twitter" class="bpnS"id="twitter">
 						<span>Twitter</span>
 						<i class="fa fa-twitter"></i>
 					</button>
 				</div>
 				<div class="sociaux">
-					<button class="bpnS" id="facebook">
+					<button name="reseauSociaux facebook" class="bpnS" id="facebook">
 						<span>Facebook</span>
 						<i class="fa fa-facebook" ></i>
 					</button>
 				</div>
 				<div class="sociaux">
-					<button class="bpnS" id="dribbble">
+					<button name="reseauSociaux dribbble" class="bpnS" id="dribbble">
 						<span>Dribbble</span>
 						<i class="fa fa-dribbble"></i>
 					</button>
 				</div>
 				<div class="sociaux">
-					<button class="bpnS" id="google-plus">
+					<button name="reseauSociaux google plus" class="bpnS" id="google-plus">
 						<span>Google Plus</span>
 						<i class="fa fa-google-plus"></i>
 					</button>
@@ -227,17 +227,17 @@
 				<div class="row">
 					<div class="col-10 offset-1">
 						<div id="myBtnContainer">
-							<button class="btn active" onclick="filterSelection('all')" id="all">Show All</button>
-							<button class="btn" onclick="filterSelection('action')" id="action">Action</button>
-							<button class="btn" onclick="filterSelection('aventure')" id="aventure">Aventure</button>
-							<button class="btn" onclick="filterSelection('amour')" id="amour">Amour</button>
-							<button class="btn" onclick="filterSelection('comedie')" id="comedie">Comédie</button>
-							<button class="btn" onclick="filterSelection('drame')" id="drame">Drame</button>
-							<button class="btn" onclick="filterSelection('fantasy')" id="fantasy">Fantasy</button>
-							<button class="btn" onclick="filterSelection('guerre')" id="guerre">Guerre</button>
-							<button class="btn" onclick="filterSelection('sci-fi')" id="sci-fi">Sci-Fi</button>
-							<button class="btn" onclick="filterSelection('thriller')" id="thriller">Thriller</button>
-							<button class="btn" onclick="filterSelection('western')" id="western">Western</button>
+							<button name="all" class="btn active" onclick="filterSelection('all')" id="all">Show All</button>
+							<button name="action" class="btn" onclick="filterSelection('action')" id="action">Action</button>
+							<button name="aventure" class="btn" onclick="filterSelection('aventure')" id="aventure">Aventure</button>
+							<button name="amour" class="btn" onclick="filterSelection('amour')" id="amour">Amour</button>
+							<button name="comedie" class="btn" onclick="filterSelection('comedie')" id="comedie">Comédie</button>
+							<button name="drame" class="btn" onclick="filterSelection('drame')" id="drame">Drame</button>
+							<button name="fantasy" class="btn" onclick="filterSelection('fantasy')" id="fantasy">Fantasy</button>
+							<button name="guerre" class="btn" onclick="filterSelection('guerre')" id="guerre">Guerre</button>
+							<button name="sci-fi" class="btn" onclick="filterSelection('sci-fi')" id="sci-fi">Sci-Fi</button>
+							<button name="thriller" class="btn" onclick="filterSelection('thriller')" id="thriller">Thriller</button>
+							<button name="western" class="btn" onclick="filterSelection('western')" id="western">Western</button>
 						</div>
 						<div class="container row" id="test-card">
 							<div class="col-12">
@@ -504,8 +504,8 @@
 							</div>
 						</div>
 						<div id="sorts" class="mx-auto">
-							<button class="button mx-auto" id="showfilmP">Plus de films</button>
-							<button class="button mx-auto" id="showfilmM">Mois de films</button>
+							<button name="plus film" class="button mx-auto" id="showfilmP">Plus de films</button>
+							<button name="mois film" class="button mx-auto" id="showfilmM">Mois de films</button>
 						</div>
 					</div>
 				</div>
@@ -667,11 +667,11 @@
 					</div>
 					<div class="col-5">
 						<div id="posiBpsSHOP">
-							<button class="prev" onclick="plusShop(-1)">
+							<button name="prev" class="prev" onclick="plusShop(-1)">
 								<
 								<
 							</button>
-							<button class="next" onclick="plusShop(1)">
+							<button name="next" class="next" onclick="plusShop(1)">
 								>>
 							</button>
 						</div>
@@ -679,7 +679,7 @@
 							<div class="myShop">
 								<div class="card">
 									<div class="container-body">
-										<iframe width="100%" height="250" src="https://www.youtube.com/embed/YtQq0T3ExLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<iframe title="Zoolander" width="100%" height="250" src="https://www.youtube.com/embed/YtQq0T3ExLs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										<div class="row">
 											<div class="col-12">
 												<h4 class="card-title "><b>Zoolander</b></h4>
@@ -727,7 +727,7 @@
 							<div class="myShop">
 								<div class="card">
 									<div class="container-body">
-										<iframe width="100%" height="250" src="https://www.youtube.com/embed/PQvoKjade9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<iframe title="Inception" width="100%" height="250" src="https://www.youtube.com/embed/PQvoKjade9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										<div class="row">
 											<div class="col-12">
 												<h4 class="card-title">Inception</h4>
@@ -775,7 +775,7 @@
 							<div class="myShop">
 								<div class="card">
 									<div class="container-body">
-										<iframe width="100%" height="250" src="https://www.youtube.com/embed/FguRZAv_LS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<iframe title="Le patient anglais" width="100%" height="250" src="https://www.youtube.com/embed/FguRZAv_LS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										<div class="row">
 											<div class="col-12">
 												<h4 class="card-title">LE PATIENT ANGLAIS</h4>
@@ -823,7 +823,7 @@
 							<div class="myShop">
 								<div class="card">
 									<div class="container-body">
-										<iframe width="100%" height="250" src="https://www.youtube.com/embed/c9blKqmyeV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<iframe title="Le Seigneur des anneaux : Les Deux Tours" width="100%" height="250" src="https://www.youtube.com/embed/c9blKqmyeV4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										<div class="row">
 											<div class="col-12">
 												<h4 class="card-title">Le Seigneur des anneaux : Les Deux Tours</h4>
@@ -871,7 +871,7 @@
 							<div class="myShop">
 								<div class="card">
 									<div class="container-body">
-										<iframe width="100%" height="250" src="https://www.youtube.com/embed/7XBzCZtDHBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<iframe title="Seven" width="100%" height="250" src="https://www.youtube.com/embed/7XBzCZtDHBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										<div class="row">
 											<div class="col-12">
 												<h4 class="card-title">Seven</h4>
@@ -919,7 +919,7 @@
 							<div class="myShop">
 								<div class="card">
 									<div class="container-body">
-										<iframe width="100%" height="250" src="https://www.youtube.com/embed/Z7B0vfamFTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<iframe title="Star Wars, épisode V : L'Empire contre-attaque" width="100%" height="250" src="https://www.youtube.com/embed/Z7B0vfamFTE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										<div class="row">
 											<div class="col-12">
 												<h4 class="card-title">Star Wars, épisode V : L'Empire contre-attaque</h4>
@@ -967,7 +967,7 @@
 							<div class="myShop">
 								<div class="card">
 									<div class="container-body">
-										<iframe width="100%" height="250" src="https://www.youtube.com/embed/LEH7nDkiPEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<iframe title="Survive Style 5+" width="100%" height="250" src="https://www.youtube.com/embed/LEH7nDkiPEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										<div class="row">
 											<div class="col-12">
 												<h4 class="card-title ">Survive Style 5+</h4>
@@ -1015,7 +1015,7 @@
 							<div class="myShop">
 								<div class="card">
 									<div class="container-body">
-										<iframe width="100%" height="250" src="https://www.youtube.com/embed/Cv568AzZ-i8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+										<iframe title="Vampires en toute intimité" width="100%" height="250" src="https://www.youtube.com/embed/Cv568AzZ-i8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 										<div class="row">
 											<div class="col-12">
 												<h4 class="card-title">Vampires en toute intimité</h4>
@@ -1091,13 +1091,13 @@
 										<textarea name="" id="" cols="30" rows="10"value="YOUR MESSAGE">YOUR MESSAGE</textarea>
 									</div>
 								</div>
-								<button>SEND MESSAGE</button>
+								<button name="Envoi message">SEND MESSAGE</button>
 							</form>
 						</div>
 						<div div class="col-6">
 							<div  class="row">
 								<div class="col-12">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1299766.5303444786!2d2.6622522291660475!3d50.48566885157783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x282305869b481065!2sAmical+Cin%C3%A9!5e0!3m2!1sfr!2sbe!4v1530093462819" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+									<iframe title="Plan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1299766.5303444786!2d2.6622522291660475!3d50.48566885157783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x282305869b481065!2sAmical+Cin%C3%A9!5e0!3m2!1sfr!2sbe!4v1530093462819" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
@@ -1110,7 +1110,7 @@
 						<label for="">SUBSCRIBE TO US</label>
 						<br>
 						<input type="text">
-						<button>SUBSCRIBE</button>
+						<button name="subscribe">SUBSCRIBE</button>
 					</form>
 				</div>
 				<br>
@@ -1287,7 +1287,7 @@
 				</div>
 			</section>
 			<footer>
-				<button onclick="topFunction()" id="myBtn" title="Go to top">Haut</button>
+				<button onclick="topFunction()" id="myBtn" title="Go to top" name="Haut">Haut</button>
 			</footer>
 			<div id="Login" class="modal">
 				<form class="modal-content animate" action="">
@@ -1297,12 +1297,12 @@
 						<input type="text" id="Identifiant" class="champ inputToP" required>
 						<label for="Password"><b>Password</b></label>
 						<input type="password" id="Password" class="champ inputToP" required>
-						<button type="submit" class="button-F2">Login</button>
-						<button type="button" onclick="change()"class="button-F2">Créer un compte</button>
+						<button type="submit" class="button-F2" name="login modal">Login</button>
+						<button type="button" onclick="change()"class="button-F2" name="change modal">Créer un compte</button>
 						<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
 					</div>
 					<div class="container" style="background-color:#f1f1f1">
-						<button type="button" onclick="document.getElementById('Login').style.display='none'" class="cancelbtn">Cancel</button>
+						<button type="button" onclick="document.getElementById('Login').style.display='none'" class="cancelbtn" name="fermer modal login">Cancel</button>
 						<span class="psw">Forgot <a href="#">password?</a></span>
 					</div>
 				</form>
@@ -1325,10 +1325,10 @@
 							<a href="" target="_blank">conditions d'utilisations</a>
 						</label>
 						<br>
-						<button type="submit"id="envoi"class="button-F2">Register</button>
+						<button type="submit"id="envoi"class="button-F2" name="register modal">Register</button>
 					</div>
 					<div class="container" style="background-color:#f1f1f1">
-						<button type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">Cancel</button>
+						<button name="fermer modal register" type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">Cancel</button>
 					</div>
 				</form>
 			</div>
@@ -1346,10 +1346,10 @@
 					<div class="modal-content animate">
 						<div class="modal-header">
 							<h4 class="modal-title">Lego Batman, le film</h4>
-							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+							<button name="fermer modal batman" type="button" class="close" onclick="fermerModal()">&times;</button>
 						</div>
 						<div class="container">
-							<iframe width="100%" height="200" src="https://www.youtube.com/embed/hd6dqh9BjHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe title="The Lego Batman Movie" width="100%" height="200" src="https://www.youtube.com/embed/hd6dqh9BjHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<p>
 								De grands changements s'en viennent à Gotham, alors s'il tient vraiment à libérer la ville de l'emprise impitoyable du Joker, Batman devra sans doute laisser tomber son statut de justicier solitaire, s'efforcer de travailler en équipe, et peut-être, seulement peut-être, apprendre à se détendre.
 							</p>
@@ -1380,10 +1380,10 @@
 					<div class="modal-content animate">
 						<div class="modal-header">
 							<h4 class="modal-title">Intouchables</h4>
-							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+							<button name="fermer modal Intouchables" type="button" class="close" onclick="fermerModal()">&times;</button>
 						</div>
 						<div class="container">
-							<iframe width="100%" height="200" src="https://www.youtube.com/embed/cXu2MhWYUuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe title="Intouchables" width="100%" height="200" src="https://www.youtube.com/embed/cXu2MhWYUuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<p>
 								Tout les oppose et il était peu probable qu'ils se rencontrent un jour, et pourtant. Philippe, un riche aristocrate devenu tétraplégique après un accident de parapente va engager Driss, un jeune homme d'origine sénégalaise tout droit sorti de prison, comme auxiliaire de vie à domicile. Pourquoi lui ? Tout simplement parce qu'il ne regarde pas Philippe avec le même regard de pitié que les autres candidats.
 							</p>
@@ -1410,10 +1410,10 @@
 					<div class="modal-content animate">
 						<div class="modal-header">
 							<h4 class="modal-title">The Fall</h4>
-							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+							<button name="fermer modal the fall" type="button" class="close" onclick="fermerModal()">&times;</button>
 						</div>
 						<div class="container">
-							<iframe width="100%" height="200" src="https://www.youtube.com/embed/qNGqTltN-7M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe title="The Fall" width="100%" height="200" src="https://www.youtube.com/embed/qNGqTltN-7M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<p>
 								The Fall est un film américano-britannico-indien réalisé par Tarsem Singh, sorti en 2006, Inspiré du scénario écrit par Valeri Petrov pour le film bulgare Yo Ho Ho réalisé par Zako Heskija en 1981, le film est ... Wikipédia
 							</p>
@@ -1444,10 +1444,10 @@
 					<div class="modal-content animate">
 						<div class="modal-header">
 							<h4 class="modal-title">Shutter Island</h4>
-							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+							<button name="fermer modal shutter island" type="button" class="close" onclick="fermerModal()">&times;</button>
 						</div>
 						<div class="container">
-							<iframe width="100%" height="200" src="https://www.youtube.com/embed/lhBTlYQcBC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe title="Shutter Island" width="100%" height="200" src="https://www.youtube.com/embed/lhBTlYQcBC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<p>
 								L'invraisemblable évasion d'une meurtrière rusée amène le marshal Teddy Daniels et son nouveau partenaire à l'hôpital Ashecliffe, un asile psychiatrique situé sur une île lointaine et balayée par les vents. Il apparaît que la femme a disparu d'une chambre fermée à clef et il y a des indices d'actes … PLUS
 							</p>
@@ -1478,10 +1478,10 @@
 					<div class="modal-content animate">
 						<div class="modal-header">
 							<h4 class="modal-title">swiss army man</h4>
-							<button type="button" class="close" onclick="fermerModal()">&times;</button>
+							<button name="fermer modal swiss army man" type="button" class="close" onclick="fermerModal()">&times;</button>
 						</div>
 						<div class="container">
-							<iframe width="100%" height="200" src="https://www.youtube.com/embed/C6NzNsd0l_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe title="swiss army man"width="100%" height="200" src="https://www.youtube.com/embed/C6NzNsd0l_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<p>
 								Hank est perdu sur une île déserte. Désespéré, il est sur le point de mettre fin à ses jours lorsqu'il aperçoit un cadavre échoué sur la plage. Plus qu'un simple macchabée, celui-ci semble encore animé, en tout cas juste assez pour avoir d'impressionnantes flatulences capables de le propulser dans les airs et des érections à faire pâlir bon nombre de vivants.
 							</p>
