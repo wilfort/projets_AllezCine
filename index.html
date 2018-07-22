@@ -91,8 +91,8 @@
 							</div>
 						</div>
 						<!-- Left and right controls -->
-						<a class="carousel-control-prev" href="#demo" data-slide="prev"rel="noreferrer"><span class="carousel-control-prev-icon"></span></a>
-						<a class="carousel-control-next" href="#demo" data-slide="next"rel="noreferrer"><span class="carousel-control-next-icon"></span></a>
+						<a class="carousel-control-prev" href="#demo" data-slide="prev" rel="noreferrer"><span class="carousel-control-prev-icon"></span></a>
+						<a class="carousel-control-next" href="#demo" data-slide="next" rel="noreferrer"><span class="carousel-control-next-icon"></span></a>
 			</div>
 					<!-- Forms -->
 				<div id="btnForm">
@@ -671,7 +671,7 @@
 					<div class="col-12 col-md-6 col-lg-5">
 						<div id="posiBpsSHOP">
 							<button name="prev" class="prev" onclick="plusShop(-1)">
-								<<
+								&lt;&lt;
 							</button>
 							<button name="next" class="next" onclick="plusShop(1)">
 								>>
@@ -1090,13 +1090,13 @@
 										<input type="text" id="SUJECT" value="SUJECT">
 									</div>
 									<div class="col-12">
-										<textarea name="" id="YOUR-MESSAGE" cols="30" rows="10"value="YOUR MESSAGE">YOUR MESSAGE</textarea>
+										<textarea name="message" id="YOUR-MESSAGE" cols="30" rows="10">YOUR MESSAGE</textarea>
 									</div>
 								</div>
 								<button name="Envoi message" id="SEND-MESSAGE" onclick="message()">SEND MESSAGE</button>
 							</form>
 						</div>
-						<div div class="col-6">
+						<div class="col-6">
 							<div  class="row">
 								<div class="col-12">
 									<iframe title="Plan" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1299766.5303444786!2d2.6622522291660475!3d50.48566885157783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x282305869b481065!2sAmical+Cin%C3%A9!5e0!3m2!1sfr!2sbe!4v1530093462819" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -1245,8 +1245,7 @@
 							ALLEZCINE!
 						</div>
 						<br>
-						<div>
-							<dir class="row">
+						<div class="row">
 								<div class="col-4">
 									<img src="./img/ironMan.jpeg" alt="" class="imageFooter">
 								</div>
@@ -1265,7 +1264,6 @@
 								<div class="col-4">
 									<img src="./img/peter-elliott.jpeg" alt="" class="imageFooter">
 								</div>
-							</dir>
 						</div>
 					</div>
 				</div>
@@ -1281,11 +1279,11 @@
 					</div>
 					<br>
 					<div id="link-sociaux">
-						<a href="www.facebook.com/‎"rel="noreferrer"><i class="fa fa-facebook" ></i></a>
-						<a href="https://twitter.com/"rel="noreferrer"><i class="fa fa-twitter"></i></a>
-						<a href="https://fr.linkedin.com/"rel="noreferrer"><i class="fa fa-linkedin"></i></a>
-						<a href="https://www.youtube.com/?hl=FR"rel="noreferrer"><i class="fa fa-youtube"></i></a>
-						<a href="https://plus.google.com/?hl=fr"rel="noreferrer"><i class="fa fa-google-plus"></i></a>
+						<a href="www.facebook.com/‎" rel="noreferrer"><i class="fa fa-facebook" ></i></a>
+						<a href="https://twitter.com/" rel="noreferrer"><i class="fa fa-twitter"></i></a>
+						<a href="https://fr.linkedin.com/" rel="noreferrer"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.youtube.com/?hl=FR" rel="noreferrer"><i class="fa fa-youtube"></i></a>
+						<a href="https://plus.google.com/?hl=fr" rel="noreferrer"><i class="fa fa-google-plus"></i></a>
 					</div>
 				</div>
 				<br><br>
@@ -1295,25 +1293,25 @@
 			</footer>
 			<div id="Login" class="modal">
 				<form class="modal-content animate" action="">
-					<span onclick="document.getElementById('Login').style.display='none'"class="close">&times;</span>
+					<span onclick="document.getElementById('Login').style.display='none'" class="close">&times;</span>
 					<div class="container">
 						<label for="Identifiant"><b>Identifiant</b></label>
 						<input type="text" id="Identifiant" class="champ inputToP" required>
 						<label for="Password"><b>Password</b></label>
 						<input type="password" id="Password" class="champ inputToP" required>
 						<button type="submit" class="button-F2" name="login modal">Login</button>
-						<button type="button" onclick="change()"class="button-F2" name="change modal">Créer un compte</button>
+						<button type="button" onclick="change()" class="button-F2" name="change modal">Créer un compte</button>
 						<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
 					</div>
 					<div class="container" style="background-color:#f1f1f1">
 						<button type="button" onclick="document.getElementById('Login').style.display='none'" class="cancelbtn" name="fermer modal login">Cancel</button>
-						<span class="psw">Forgot <a href="#"rel="noreferrer">password?</a></span>
+						<span class="psw">Forgot <a href="#" rel="noreferrer">password?</a></span>
 					</div>
 				</form>
 			</div>
 			<div id="Register" class="modal">
 				<form class="modal-content animate" action="">
-					<span onclick="document.getElementById('Register').style.display='none'"class="close">&times;</span>
+					<span onclick="document.getElementById('Register').style.display='none'" class="close">&times;</span>
 					<div class="container">
 						<label for="name"><b>Nom</b></label>
 						<input type="text" id="name" class="champ inputToP" required>
@@ -1326,10 +1324,10 @@
 						<label>
 							<input type="checkbox" value="" name="conditions" autocomplete="off">
 							 J'accepte les
-							<a href="" target="_blank"rel="noreferrer">conditions d'utilisations</a>
+							<a href="" target="_blank" rel="noreferrer">conditions d'utilisations</a>
 						</label>
 						<br>
-						<button type="submit"id="envoi"class="button-F2" name="register modal">Register</button>
+						<button type="submit" id="envoi" class="button-F2" name="register modal">Register</button>
 					</div>
 					<div class="container" style="background-color:#f1f1f1">
 						<button name="fermer modal register" type="button" onclick="document.getElementById('Register').style.display='none'" class="cancelbtn">Cancel</button>
@@ -1342,7 +1340,7 @@
 						<span onclick="fermerModal()" class="close">&times;</span>
 						<div class="container">
 							Ce site utilise des cookies et vous donne le contrôle sur ce que vous souhaitez activer
-							<a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi"rel="noreferrer">plus info</a>
+							<a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi" rel="noreferrer">plus info</a>
 						</div>
 					</form>
 				</div>
@@ -1485,7 +1483,7 @@
 							<button name="fermer modal swiss army man" type="button" class="close" onclick="fermerModal()">&times;</button>
 						</div>
 						<div class="container">
-							<iframe title="swiss army man"width="100%" height="200" src="https://www.youtube.com/embed/C6NzNsd0l_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							<iframe title="swiss army man" width="100%" height="200" src="https://www.youtube.com/embed/C6NzNsd0l_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							<p>
 								Hank est perdu sur une île déserte. Désespéré, il est sur le point de mettre fin à ses jours lorsqu'il aperçoit un cadavre échoué sur la plage. Plus qu'un simple macchabée, celui-ci semble encore animé, en tout cas juste assez pour avoir d'impressionnantes flatulences capables de le propulser dans les airs et des érections à faire pâlir bon nombre de vivants.
 							</p>
@@ -1518,9 +1516,9 @@
 			<script src="modal.js"></script>
 			<script src="myShop.js"></script>
 			<script src="snippet.js"></script>
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 			<script type="text/javascript">
 				$('#myModal').on('shown.bs.modal', function () {
 					$('#myInput').trigger('focus')
